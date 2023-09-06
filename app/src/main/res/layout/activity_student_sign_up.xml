@@ -146,33 +146,66 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/etGenderLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:hintEnabled="true"
+        android:id="@+id/etQualificationLayout"
         style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
-        app:endIconMode="dropdown_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:boxBackgroundColor="@color/white"
-        app:hintTextColor="@color/green"
-        app:boxStrokeColor="@color/green"
-        app:boxCornerRadiusTopStart="10dp"
-        app:boxCornerRadiusTopEnd="10dp"
-        app:boxCornerRadiusBottomStart="10dp"
         app:boxCornerRadiusBottomEnd="10dp"
-        app:layout_constraintTop_toBottomOf="@id/etEmailLayout"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxStrokeColor="@color/green"
+        app:endIconMode="dropdown_menu"
+        app:hintEnabled="true"
+        app:hintTextColor="@color/green"
+        android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="10dp">
+        app:layout_constraintTop_toBottomOf="@id/etEmailLayout"
+        tools:layout_editor_absoluteY="574dp">
 
         <AutoCompleteTextView
+            android:id="@+id/etQualification"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Qualification"
+            android:inputType="none"
             android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:simpleItems="@array/qualifications" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etGenderLayout"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:boxBackgroundColor="@color/white"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxStrokeColor="@color/green"
+        app:endIconMode="dropdown_menu"
+        app:hintEnabled="true"
+        app:hintTextColor="@color/green"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/etQualificationLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="428dp">
+
+        <AutoCompleteTextView
             android:id="@+id/etGender"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textColor="@color/black"
             android:hint="Gender"
             android:inputType="none"
-            app:simpleItems="@array/genders"
-            android:textSize="14sp"/>
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:simpleItems="@array/genders" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -180,7 +213,6 @@
         style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:hint="D/O/B"
         app:boxBackgroundColor="@color/white"
         app:boxCornerRadiusBottomEnd="10dp"
@@ -195,7 +227,9 @@
         app:hintTextColor="@color/green"
         app:layout_constraintEnd_toEndOf="@+id/etGenderLayout"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etGenderLayout">
+        app:layout_constraintTop_toBottomOf="@id/etGenderLayout"
+        android:layout_marginTop="10dp"
+        tools:layout_editor_absoluteY="501dp">
 
         <AutoCompleteTextView
             android:id="@+id/etDOB"
@@ -207,34 +241,5 @@
             android:textSize="14sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/etQualificationLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:hintEnabled="true"
-        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
-        app:endIconMode="dropdown_menu"
-        app:boxBackgroundColor="@color/white"
-        app:hintTextColor="@color/green"
-        app:boxStrokeColor="@color/green"
-        app:boxCornerRadiusTopStart="10dp"
-        app:boxCornerRadiusTopEnd="10dp"
-        app:boxCornerRadiusBottomStart="10dp"
-        app:boxCornerRadiusBottomEnd="10dp"
-        app:layout_constraintTop_toBottomOf="@id/etDOBLayout"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="10dp">
 
-    <AutoCompleteTextView
-        android:padding="10dp"
-        android:id="@+id/etQualification"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textColor="@color/black"
-        android:hint="Qualification"
-        android:inputType="none"
-        app:simpleItems="@array/qualifications"
-        android:textSize="14sp"/>
-
-    </com.google.android.material.textfield.TextInputLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

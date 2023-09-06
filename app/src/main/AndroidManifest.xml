@@ -17,7 +17,10 @@
         android:theme="@style/Theme.GraminShikshaSahyog"
         tools:targetApi="31">
         <activity
-            android:name=".ui.activities.SignUpActivity"
+            android:name=".ui.activities.MentorSignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.StudentSignUpActivity"
             android:exported="false" />
         <activity
             android:name=".ui.activities.SignInActivity"

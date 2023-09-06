@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Gramin Shiksha Sahyog</string>
+    <string-array name="genders">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="qualifications">
+        <item>High School</item>
+        <item>Higher Secondary</item>
+        <item>Graduate</item>
+        <item>Post-Graduate</item>
+    </string-array>
 </resources>

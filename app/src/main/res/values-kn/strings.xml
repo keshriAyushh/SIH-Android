@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">ಗ್ರಾಮೀಣ ಶಿಕ್ಷಣ ಸಹಕಾರ</string>
+    <string name="fill_all_details">ದಯವಿಟ್ಟು ಎಲ್ಲಾ ವಿವರಗಳನ್ನು ನಮೂದಿಸಿ</string>
+
 </resources>

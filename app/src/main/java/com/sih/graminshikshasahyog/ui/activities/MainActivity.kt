@@ -7,14 +7,13 @@ import com.sih.graminshikshasahyog.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
+    //Landing page for student sign up
     private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.Next.setOnClickListener {
-            startActivity(Intent(this, StudentSignUpActivity::class.java))
-        }
+
     }
 }

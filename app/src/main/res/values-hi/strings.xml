@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">ग्रामीण शिक्षा सहयोग</string>
+    <string name="fill_all_details">कृपया सारी जानकारी दर्ज करें</string>
 
+    <string-array name="genders">
+        <item>पुरुष</item>
+        <item>महिला</item>
+        <item>अन्य</item>
+    </string-array>
+
+    <string-array name="qualifications">
+        <item>उच्च विद्यालय</item>
+        <item>उच्चतर माध्यमिक</item>
+        <item>स्नातक</item>
+        <item>स्नातकोत्तर</item>
+    </string-array>
 </resources>

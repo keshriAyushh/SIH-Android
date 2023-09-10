@@ -2,4 +2,20 @@
 <resources>
     <string name="app_name">గ్రామీణ శిక్షా సహయోగ్</string>
     <string name="fill_all_details">దయచేసి అన్ని వివరాలను నమోదు చేయండి</string>
+    <string name="skills">నైపుణ్యాలు</string>
+    <string name="progress">పురోగతి</string>
+    <string name="additional_info">అదనపు సమాచారం</string>
+    <string name="ques_living">మీరు జీవనోపాధి కోసం ఏమి చేస్తారు</string>
+    <string name="ques_location">നിങ്ങളുടെ സ്ഥാനം ചേർക്കുക</string>
+    <string name="ques_email">మీ ఇమెయిల్‌ను జోడించండి</string>
+    <string name="private_info">ప్రైవేట్ సమాచారం</string>
+    <string name="gender">లింగం</string>
+    <string name="gender_colon">లింగం: </string>
+    <string name="phone">ఫోన్</string>
+    <string name="phone_colon">"ఫోన్: "</string>
+    <string name="dob">పుట్టిన తేది</string>
+    <string name="dob_colon">"పుట్టిన తేది: "</string>
+    <string name="male">పురుషుడు</string>
+    <string name="female">స్త్రీ</string>
+    <string name="others">ఇతర లింగం</string>
 </resources>

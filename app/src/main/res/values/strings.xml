@@ -1,6 +1,24 @@
 <resources>
     <string name="app_name">Gramin Shiksha Sahyog</string>
     <string name="fill_all_details">Please enter all the details</string>
+    <string name="skills">Skills</string>
+    <string name="progress">Progress</string>
+    <string name="additional_info">Additional Information</string>
+    <string name="ques_living">What do you do for a living? </string>
+
+    <string name="ques_location">Add your location</string>
+    <string name="ques_email">Add your email</string>
+    <string name="private_info">Private Information</string>
+    <string name="gender">Gender</string>
+    <string name="gender_colon">Gender: </string>
+    <string name="phone">Phone</string>
+    <string name="phone_colon">Phone: </string>
+    <string name="dob">D/O/B</string>
+    <string name="dob_colon">D/O/B: </string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="others">Others</string>
+
     <string-array name="genders">
         <item>Male</item>
         <item>Female</item>
@@ -13,4 +31,5 @@
         <item>Graduate</item>
         <item>Post-Graduate</item>
     </string-array>
+
 </resources>

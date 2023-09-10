@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Gramin Shiksha Sahyog</string>
     <string name="fill_all_details">Please enter all the details</string>
+    <string name="sign_in">Sign in</string>
     <string-array name="genders">
         <item>Male</item>
         <item>Female</item>

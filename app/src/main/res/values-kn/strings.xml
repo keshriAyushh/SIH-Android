@@ -2,5 +2,20 @@
 <resources>
     <string name="app_name">ಗ್ರಾಮೀಣ ಶಿಕ್ಷಣ ಸಹಕಾರ</string>
     <string name="fill_all_details">ದಯವಿಟ್ಟು ಎಲ್ಲಾ ವಿವರಗಳನ್ನು ನಮೂದಿಸಿ</string>
-
+    <string name="skills">ಕೌಶಲ್ಯಗಳು</string>
+    <string name="progress">ಪ್ರಗತಿ</string>
+    <string name="additional_info">ಹೆಚ್ಚುವರಿ ಮಾಹಿತಿ</string>
+    <string name="ques_living">ನೀವು ಜೀವನಕ್ಕಾಗಿ ಏನು ಮಾಡುತ್ತೀರಿ</string>
+    <string name="ques_location">ನಿಮ್ಮ ಸ್ಥಳವನ್ನು ಸೇರಿಸಿ</string>
+    <string name="ques_email">ನಿಮ್ಮ ಇಮೇಲ್ ಸೇರಿಸಿ</string>
+    <string name="private_info">ಖಾಸಗಿ ಮಾಹಿತಿ</string>
+    <string name="gender">ಲಿಂಗ</string>
+    <string name="gender_colon">ಲಿಂಗ: </string>
+    <string name="phone">ಫೋನ್</string>
+    <string name="phone_colon">"ಫೋನ್: "</string>
+    <string name="dob">ಹುಟ್ತಿದ ದಿನ</string>
+    <string name="dob_colon">"ಹುಟ್ತಿದ ದಿನ: "</string>
+    <string name="male">ಪುರುಷ</string>
+    <string name="female">ಹೆಣ್ಣು</string>
+    <string name="others">ಇತರ ಲಿಂಗ</string>
 </resources>

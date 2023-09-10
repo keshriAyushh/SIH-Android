@@ -2,17 +2,20 @@
 <resources>
     <string name="app_name">ग्रामीण शिक्षा सहयोग</string>
     <string name="fill_all_details">कृपया सारी जानकारी दर्ज करें</string>
-
-    <string-array name="genders">
-        <item>पुरुष</item>
-        <item>महिला</item>
-        <item>अन्य</item>
-    </string-array>
-
-    <string-array name="qualifications">
-        <item>उच्च विद्यालय</item>
-        <item>उच्चतर माध्यमिक</item>
-        <item>स्नातक</item>
-        <item>स्नातकोत्तर</item>
-    </string-array>
+    <string name="skills">कौशल</string>
+    <string name="progress">प्रगति</string>
+    <string name="additional_info">अतिरिक्त जानकारी</string>
+    <string name="ques_living">आप जीविका के लिए क्या करते हैं</string>
+    <string name="ques_location">अपना स्थान जोड़ें</string>
+    <string name="ques_email">अपना ईमेल जोड़ें</string>
+    <string name="private_info">निजी जानकारी</string>
+    <string name="gender">लिंग</string>
+    <string name="gender_colon">लिंग: </string>
+    <string name="phone">फ़ोन</string>
+    <string name="phone_colon">"फ़ोन: "</string>
+    <string name="dob">जन्म तिथि</string>
+    <string name="dob_colon">"जन्म तिथि: "</string>
+    <string name="male">पुरुष</string>
+    <string name="female">महिला</string>
+    <string name="others">अन्य लिंग</string>
 </resources>

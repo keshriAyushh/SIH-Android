@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/skills"
+        android:title="Skills"
+        android:icon="@drawable/skills"
+        android:iconTint="@color/black"/>
+
+    <item android:id="@+id/mentor"
+        android:title="Mentor"
+        android:icon="@drawable/mentor"
+        android:iconTint="@color/black"/>
+
+    <item android:id="@+id/jobs"
+        android:title="Jobs"
+        android:icon="@drawable/jobs"
+        android:iconTint="@color/black"/>
+
+    <item android:id="@+id/ruralAid"
+        android:title="Rural Aid"
+        android:icon="@drawable/rural_aid"
+        android:iconTint="@color/black"/>
+
+    <item android:id="@+id/account"
+        android:title="Account"
+        android:icon="@drawable/account"
+        android:iconTint="@color/black"/>
+</menu>

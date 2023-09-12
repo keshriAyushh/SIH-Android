@@ -1,52 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     tools:context=".ui.fragments.RuralAidFragment">
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="90dp"
-            app:cardBackgroundColor="@color/black"
+            app:cardBackgroundColor="@color/black">
 
-            >
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
+
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:layout_marginLeft="18dp"
                     android:layout_marginTop="15dp"
+                    android:layout_weight="1"
                     android:orientation="vertical">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:letterSpacing="0.05"
                         android:text="Rural"
                         android:textColor="@color/white"
                         android:textSize="25dp"
+
                         android:textStyle="bold"
 
-                        android:letterSpacing="0.05"
-
                         />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:letterSpacing="0.05"
                         android:text="Aid"
                         android:textColor="@color/orange"
                         android:textSize="25dp"
-                        android:textStyle="bold"
 
-                        android:letterSpacing="0.05"
+                        android:textStyle="bold"
 
                         />
 
@@ -56,31 +62,34 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_weight="0.1"
                     android:layout_marginBottom="8dp"
+                    android:layout_weight="0.1"
                     android:orientation="horizontal">
+
                     <ImageView
+                        android:id="@+id/filter_btn"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/filter"
                         android:layout_marginTop="15dp"
-                        android:id="@+id/filter_btn"
+                        android:src="@drawable/filter"
 
                         />
+
                     <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:src="@drawable/search"
-                        android:layout_marginTop="15dp"
                         android:id="@+id/search_btn"
-                        android:layout_marginLeft="20dp"/>
-                    <ImageView
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@drawable/notification"
+                        android:layout_marginLeft="20dp"
                         android:layout_marginTop="15dp"
+                        android:src="@drawable/search" />
+
+                    <ImageView
                         android:id="@+id/notification_btn"
-                        android:layout_marginLeft="20dp"/>
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/notification" />
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -89,30 +98,33 @@
 
 
         </androidx.cardview.widget.CardView>
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tabLayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:tabIndicatorColor="@color/orange"
-            app:tabIndicatorAnimationMode="elastic"
-            app:tabMode="fixed"
-            android:layout_marginTop="80dp"
-            app:tabTextColor="@color/white"
-            app:tabSelectedTextColor="@color/orange"
-            android:background="@color/black"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+
+
     </FrameLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabIndicatorAnimationMode="elastic"
+        app:tabIndicatorColor="@color/orange"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/orange"
+        app:tabTextColor="@color/white" />
 
 
     <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/viewPager"
+        android:id="@+id/viewPager2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@id/tabLayout"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tabLayout2" />
 
-</androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>

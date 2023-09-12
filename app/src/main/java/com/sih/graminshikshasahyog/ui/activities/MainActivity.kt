@@ -1,10 +1,8 @@
 package com.sih.graminshikshasahyog.ui.activities
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentTransaction.TRANSIT_FRAGMENT_FADE
 import com.sih.graminshikshasahyog.R
 import com.sih.graminshikshasahyog.databinding.ActivityMainBinding
 import com.sih.graminshikshasahyog.ui.fragments.AccountFragment

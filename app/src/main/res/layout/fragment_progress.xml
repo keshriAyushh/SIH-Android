@@ -5,15 +5,63 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/white"
+    android:padding="10dp"
     tools:context=".ui.fragments.ProgressFragment">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="Progress" />
+        android:elevation="2dp"
+        android:layout_height="500dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/il1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/inncerCard1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:backgroundTint="@color/yellow"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:cardCornerRadius="15dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/il2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/imageBadge"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/badge"
+                        app:layout_constraintStart_toStartOf="@+id/il2"
+                        app:layout_constraintEnd_toEndOf="@id/il2"
+                        app:layout_constraintTop_toTopOf="@id/il2"
+                        android:layout_marginTop="20dp"/>
+
+                    <TextView
+                        android:id="@+id/tvBageTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/imageBadge"
+                        android:text="BADGE TEXT"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@id/imageBadge"
+                        app:layout_constraintEnd_toEndOf="@id/imageBadge"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

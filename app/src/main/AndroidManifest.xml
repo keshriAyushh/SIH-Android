@@ -21,7 +21,7 @@
             android:exported="false" />
         <activity
             android:name=".ui.activities.StudentSignUpActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".ui.activities.SignInActivity"
             android:exported="true" >

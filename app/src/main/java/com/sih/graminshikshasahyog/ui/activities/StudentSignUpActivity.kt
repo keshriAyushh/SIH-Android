@@ -11,6 +11,8 @@ import android.view.View
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
 import com.sih.graminshikshasahyog.R
 import com.sih.graminshikshasahyog.databinding.ActivityStudentSignUpBinding
 import java.text.SimpleDateFormat
@@ -29,6 +31,9 @@ class StudentSignUpActivity : AppCompatActivity() {
     private lateinit var gender: String
     private lateinit var dob: String
     private lateinit var preference: String
+    private lateinit var password: String
+    private lateinit var auth: FirebaseAuth
+    private lateinit var firestore: FirebaseFirestore
 
     /*  TODO: uncomment to fetch location
         private val permissionId: Int = 2
@@ -74,9 +79,20 @@ class StudentSignUpActivity : AppCompatActivity() {
 
         binding.btnSignUp.setOnClickListener {
             iniValues()
-
+            auth.createUserWithEmailAndPassword(email,password)
+                .addOnCompleteListener(this) { task ->
+                    if (task.isSuccessful){
+                        Toast.makeText(applicationContext,"Account Created",Toast.LENGTH_SHORT).show()
+                        createUserDB()
+                    }
+                    else{
+                        Toast.makeText(applicationContext,"Account Couldnt be created",Toast.LENGTH_SHORT).show()
+                    }
+                }
             if (validateInputs()) {
                 //If all inputs are valid and non empty, proceed with auth
+
+
             } else {
                 Toast.makeText(this@StudentSignUpActivity, R.string.fill_all_details, Toast.LENGTH_SHORT)
                     .show()
@@ -96,14 +112,41 @@ class StudentSignUpActivity : AppCompatActivity() {
 
     } //onCreate()
 
+    private fun createUserDB() {
+        firestore = FirebaseFirestore.getInstance()
+
+        val data = hashMapOf(
+            "name" to name ,
+            "phone" to phone ,
+            "email" to email ,
+            "qualification" to qualification ,
+            "gender" to gender ,
+            "dob" to dob ,
+            "looking for" to preference
+        )
+
+        firestore.collection("studentuserDB").document(email).set(data)
+            .addOnSuccessListener { documentReference ->
+                Toast.makeText(applicationContext,"database created",Toast.LENGTH_SHORT).show()
+            }
+            .addOnFailureListener {e ->
+                Toast.makeText(applicationContext,"database couldnt be created",Toast.LENGTH_SHORT).show()
+
+            }
+
+
+    }
+
     private fun validateInputs() =
-    (name.isNotEmpty() && phone.length == 11 && email.isNotEmpty() &&
+    (name.isNotEmpty() && phone.length == 10 && email.isNotEmpty() &&
             dob.isNotEmpty() && qualification.isNotEmpty() && gender.isNotEmpty() && preference.isNotEmpty())
 
 
     private fun iniValues() {
+        auth = FirebaseAuth.getInstance()
         name = binding.etName.text.toString()
         email = binding.etEmail.text.toString()
+        password = binding.etPassword.text.toString()
         phone = "+91${binding.etPhone.text.toString()}"
         dob = binding.etDOB.text.toString()
         gender = binding.etGender.text.toString()

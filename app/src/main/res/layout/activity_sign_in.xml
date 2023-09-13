@@ -74,7 +74,8 @@
         android:layout_marginEnd="30dp"
         android:text="Forgot Password?"
         android:textColor="@color/gray"
-        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textSize="13sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etSIPassLayout" />
 
@@ -95,12 +96,13 @@
         android:id="@+id/tvNewHere"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="New here?Create an Account"
+        android:layout_marginTop="36dp"
+        android:letterSpacing="0.03"
+        android:text="New here? Create an Account"
         android:textColor="@color/green"
-        android:textSize="18sp"
+        android:textSize="17sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnSignIn" />
 

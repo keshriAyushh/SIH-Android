@@ -51,7 +51,8 @@ class SignInActivity : AppCompatActivity() {
             Toast.makeText(this@SignInActivity, "Enter email and password!", Toast.LENGTH_SHORT)
                 .show()
         } else {
-            auth.signInWithEmailAndPassword(email, pass).addOnCompleteListener {
+            auth.signInWithEmailAndPassword(email, pass)
+                .addOnCompleteListener {
                 if (it.isSuccessful) {
                     val intent = Intent(this, MainActivity::class.java)
                     Toast.makeText(this, "Logged In", Toast.LENGTH_SHORT).show()

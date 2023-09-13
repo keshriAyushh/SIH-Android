@@ -27,7 +27,7 @@ class GovtSchemesFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        var list : MutableList<GovtSchemes>  = mutableListOf()
+        val list : MutableList<GovtSchemes>  = mutableListOf()
         val firestore: FirebaseFirestore = FirebaseFirestore.getInstance()
         val collectionref : CollectionReference = firestore.collection("ruralAidGovtDB")
         var courseAdapter: CourseAdapter

@@ -2,8 +2,12 @@ package com.sih.graminshikshasahyog.model
 
 data class Student(
     val name: String,
-    val contact: String,
+    val email: String,
+    val phone: String,
+    val password: String,
     val gender: String,
-    val address: String,
-    val standard: String
+    val dob: String,
+    val qualification: String,
+    val preference: String,
+    val profilePicture: String = ""
 )

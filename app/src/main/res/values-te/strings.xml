@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">గ్రామీణ శిక్షా సహయోగ్</string>
-    <string name="fill_all_details">దయచేసి అన్ని వివరాలను నమోదు చేయండి</string>
+    <string name="fill_all_details">దయచేసి అన్ని వివరాలను సరిగ్గా నమోదు చేయండి</string>
     <string name="skills">నైపుణ్యాలు</string>
     <string name="progress">పురోగతి</string>
     <string name="additional_info">అదనపు సమాచారం</string>
@@ -32,4 +32,5 @@
     <string name="account">సృష్టించండి</string>
     <string name="want_to_contribute">ఈ సామాజిక ప్రయోజనానికి సహకరించాలనుకుంటున్నారా?</string>
     <string name="become_a_mentor">మెంటార్ అవ్వండి!</string>
+    <string name="redirect_sign_in">ఇప్పటికే ఖాతా ఉందా? సైన్ ఇన్ చేయడానికి ఇక్కడ క్లిక్ చేయండి!</string>
 </resources>

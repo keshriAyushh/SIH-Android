@@ -2,12 +2,13 @@ package com.sih.graminshikshasahyog.ui.activities
 
 import android.app.DatePickerDialog
 import android.app.DatePickerDialog.OnDateSetListener
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.text.Spannable
 import android.text.SpannableString
 import android.text.style.ForegroundColorSpan
-import android.view.View
+import android.util.Log
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -15,6 +16,9 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.sih.graminshikshasahyog.R
 import com.sih.graminshikshasahyog.databinding.ActivityStudentSignUpBinding
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale
@@ -46,8 +50,10 @@ class StudentSignUpActivity : AppCompatActivity() {
         binding = ActivityStudentSignUpBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        initFirebase()
         //The following code is used to change the color of "Mentor" in tvText4
         val spannable: Spannable = SpannableString(binding.tvText4.text)
+
 
         spannable.setSpan(
             ForegroundColorSpan(Color.GREEN),
@@ -56,6 +62,11 @@ class StudentSignUpActivity : AppCompatActivity() {
             Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
         )
         binding.tvText4.setText(spannable, TextView.BufferType.SPANNABLE)
+
+        binding.tvRedirect.setOnClickListener {
+            startActivity(Intent(this, SignInActivity::class.java))
+            finish()
+        }
 
         //Getting the date of birth in desired format
         val date =
@@ -77,28 +88,54 @@ class StudentSignUpActivity : AppCompatActivity() {
             ).show()
         }
 
+
         binding.btnSignUp.setOnClickListener {
-            iniValues()
-            auth.createUserWithEmailAndPassword(email,password)
-                .addOnCompleteListener(this) { task ->
-                    if (task.isSuccessful){
-                        Toast.makeText(applicationContext,"Account Created",Toast.LENGTH_SHORT).show()
-                        createUserDB()
+
+
+            if (binding.etName.text!!.isNotEmpty() && binding.etPhone.text!!.length == 10 && binding.etEmail.text!!.isNotEmpty() &&
+                binding.etDOB.text.isNotEmpty() && binding.etQualification.text!!.isNotEmpty() && binding.etGender.text.isNotEmpty() &&
+                binding.etPassword.text!!.isNotEmpty()
+            ) {
+                name = binding.etName.text.toString()
+                email = binding.etEmail.text.toString()
+                password = binding.etPassword.text.toString()
+                phone = "+91${binding.etPhone.text.toString()}"
+                dob = binding.etDOB.text.toString()
+                gender = binding.etGender.text.toString()
+                qualification = binding.etQualification.text.toString()
+                preference = if (binding.rbJobs.isChecked) "Jobs" else "Skills"
+                preference = if(binding.rbSkills.isChecked) "Skills" else "Jobs"
+
+                if(preference.isNotEmpty()) {
+                    GlobalScope.launch(Dispatchers.IO) {
+                        auth.createUserWithEmailAndPassword(email, password)
+                            .addOnSuccessListener {
+                                startActivity(Intent(this@StudentSignUpActivity, MainActivity::class.java))
+                                createUserDB(
+                                    name = name,
+                                    email = email,
+                                    password = password,
+                                    qualification = qualification,
+                                    gender = gender,
+                                    dob = dob,
+                                    preference = preference
+                                )
+                                finish()
+                            }
+                            .addOnFailureListener {
+                                Log.d("AuthError", "Error authenticating the user!")
+                            }
                     }
-                    else{
-                        Toast.makeText(applicationContext,"Account Couldnt be created",Toast.LENGTH_SHORT).show()
-                    }
+                } else {
+                    Toast.makeText(
+                        this@StudentSignUpActivity,
+                        R.string.fill_all_details,
+                        Toast.LENGTH_SHORT
+                    ).show()
                 }
-            if (validateInputs()) {
                 //If all inputs are valid and non empty, proceed with auth
-
-
-            } else {
-                Toast.makeText(this@StudentSignUpActivity, R.string.fill_all_details, Toast.LENGTH_SHORT)
-                    .show()
             }
         }
-
         /*
                 TODO: Uncomment to fetch location
                 mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
@@ -108,50 +145,42 @@ class StudentSignUpActivity : AppCompatActivity() {
 
                 }
          */
-
-
     } //onCreate()
 
-    private fun createUserDB() {
-        firestore = FirebaseFirestore.getInstance()
+    private fun createUserDB(
+        name: String,
+        email: String,
+        password: String,
+        qualification: String,
+        gender: String,
+        dob: String,
+        preference: String
+    ) {
 
         val data = hashMapOf(
-            "name" to name ,
-            "phone" to phone ,
-            "email" to email ,
-            "qualification" to qualification ,
-            "gender" to gender ,
-            "dob" to dob ,
+            "name" to name,
+            "phone" to phone,
+            "email" to email,
+            "qualification" to qualification,
+            "gender" to gender,
+            "dob" to dob,
             "looking for" to preference
         )
 
-        firestore.collection("studentuserDB").document(email).set(data)
-            .addOnSuccessListener { documentReference ->
-                Toast.makeText(applicationContext,"database created",Toast.LENGTH_SHORT).show()
-            }
-            .addOnFailureListener {e ->
-                Toast.makeText(applicationContext,"database couldnt be created",Toast.LENGTH_SHORT).show()
+        GlobalScope.launch(Dispatchers.IO) {
+            firestore.collection("studentuserDB").document(auth.currentUser?.uid!!).set(data)
+                .addOnSuccessListener { documentReference ->
+                    Log.d("DbSuccess", "User data saved!")
+                }
+                .addOnFailureListener { e ->
+                    Log.d("DbError", "Couldn't store the data")
 
-            }
-
-
+                }
+        }
     }
-
-    private fun validateInputs() =
-    (name.isNotEmpty() && phone.length == 10 && email.isNotEmpty() &&
-            dob.isNotEmpty() && qualification.isNotEmpty() && gender.isNotEmpty() && preference.isNotEmpty())
-
-
-    private fun iniValues() {
+    private fun initFirebase() {
         auth = FirebaseAuth.getInstance()
-        name = binding.etName.text.toString()
-        email = binding.etEmail.text.toString()
-        password = binding.etPassword.text.toString()
-        phone = "+91${binding.etPhone.text.toString()}"
-        dob = binding.etDOB.text.toString()
-        gender = binding.etGender.text.toString()
-        qualification = binding.etQualification.text.toString()
-        preference = if (binding.rbJobs.isChecked) "Jobs" else "Skills"
+        firestore = FirebaseFirestore.getInstance()
     }
 
     private fun updateLabel() {
@@ -231,4 +260,10 @@ class StudentSignUpActivity : AppCompatActivity() {
             }
         }
     */
+    override fun onStart() {
+        super.onStart()
+        if(FirebaseAuth.getInstance().currentUser != null) {
+            startActivity(Intent(this, MainActivity::class.java))
+        }
+    }
 }

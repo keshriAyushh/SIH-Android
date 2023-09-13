@@ -13,64 +13,59 @@ import com.sih.graminshikshasahyog.databinding.ActivitySignInBinding
 
 class SignInActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
-    private lateinit var etEmail: EditText
-    private lateinit var etPassword: EditText
-    private lateinit var signinBtn: Button
-    private lateinit var signupIntent: TextView
-    private lateinit var forgotpasswordbtn: TextView
+    private lateinit var binding: ActivitySignInBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_sign_in)
-        intializer()
-        signIn()
-        newHere()
-        forgotpassword()
+        binding = ActivitySignInBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-    }
+        binding.tvNewHere.setOnClickListener {
+            newHere()
+        }
 
-    private fun forgotpassword() {
+        binding.btnSignIn.setOnClickListener {
+            signIn()
+        }
 
-    }
-
-    private fun newHere() {
-        signupIntent.setOnClickListener{
-            val intent = Intent(this, StudentSignUpActivity::class.java)
-            startActivity(intent)
+        binding.tvForgotPassword.setOnClickListener {
+            forgotPassword()
         }
 
     }
 
+    private fun forgotPassword() {
+
+    }
+
+    private fun newHere() {
+        val intent = Intent(this, StudentSignUpActivity::class.java)
+        startActivity(intent)
+        finish()
+    }
+
     private fun signIn() {
-        signinBtn.setOnClickListener {
-            val email = etEmail.text.toString().trim()
-            val pass = etPassword.text.toString().trim()
-            if(email.isEmpty()==true or pass.isEmpty()==true){
-                Toast.makeText(applicationContext,"Enter email and password!",Toast.LENGTH_SHORT).show()
-            }
-            else{
-                auth.signInWithEmailAndPassword(email,pass).addOnCompleteListener{
-                    if (it.isSuccessful) {
-//                        val intent = Intent(this, MainActivity::class.java)
-                        Toast.makeText(applicationContext,"Logged In",Toast.LENGTH_SHORT).show()
-                        startActivity(intent)
-                    } else {
-                        Toast.makeText(this, "Credentials do not match", Toast.LENGTH_SHORT).show()
-                    }
+        val email = binding.etSIEmail.text.toString().trim()
+        val pass = binding.etSIPass.text.toString().trim()
+        if (email.isEmpty() == true or pass.isEmpty()) {
+            Toast.makeText(this@SignInActivity, "Enter email and password!", Toast.LENGTH_SHORT)
+                .show()
+        } else {
+            auth.signInWithEmailAndPassword(email, pass).addOnCompleteListener {
+                if (it.isSuccessful) {
+                    val intent = Intent(this, MainActivity::class.java)
+                    Toast.makeText(this, "Logged In", Toast.LENGTH_SHORT).show()
+                    startActivity(intent)
+                    finish()
+                } else {
+                    Toast.makeText(
+                        this@SignInActivity,
+                        "Credentials do not match",
+                        Toast.LENGTH_SHORT
+                    ).show()
                 }
             }
         }
 
     }
-
-    private fun intializer() {
-        auth = FirebaseAuth.getInstance()
-        etEmail = findViewById(R.id.etSIEmail)
-        etPassword = findViewById(R.id.etSIPass)
-        signinBtn = findViewById(R.id.btnSignIn)
-        signupIntent = findViewById(R.id.tvNewHere)
-        forgotpasswordbtn = findViewById(R.id.textView)
-
-    }
-
 }

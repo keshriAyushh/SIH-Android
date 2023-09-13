@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">ಗ್ರಾಮೀಣ ಶಿಕ್ಷಣ ಸಹಕಾರ</string>
-    <string name="fill_all_details">ದಯವಿಟ್ಟು ಎಲ್ಲಾ ವಿವರಗಳನ್ನು ನಮೂದಿಸಿ</string>
+    <string name="fill_all_details">ದಯವಿಟ್ಟು ಎಲ್ಲಾ ವಿವರಗಳನ್ನು ಸರಿಯಾಗಿ ನಮೂದಿಸಿ</string>
     <string name="skills">ಕೌಶಲ್ಯಗಳು</string>
     <string name="progress">ಪ್ರಗತಿ</string>
     <string name="additional_info">ಹೆಚ್ಚುವರಿ ಮಾಹಿತಿ</string>
@@ -32,6 +32,7 @@
     <string name="account">ರಚಿಸಿ</string>
     <string name="want_to_contribute">ಈ ಸಾಮಾಜಿಕ ಕಾರಣಕ್ಕೆ ಕೊಡುಗೆ ನೀಡಲು ಬಯಸುವಿರಾ?</string>
     <string name="become_a_mentor">ಮಾರ್ಗದರ್ಶಕರಾಗಿ!</string>
+    <string name="redirect_sign_in">ಈಗಾಗಲೇ ಖಾತೆ ಹೊಂದಿದ್ದೀರ? ಸೈನ್ ಇನ್ ಮಾಡಲು ಇಲ್ಲಿ ಕ್ಲಿಕ್ ಮಾಡಿ!</string>
 
 
 </resources>

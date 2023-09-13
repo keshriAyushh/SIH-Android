@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">ग्रामीण शिक्षा सहयोग</string>
-    <string name="fill_all_details">कृपया सारी जानकारी दर्ज करें</string>
+    <string name="fill_all_details">कृपया सारी जानकारी सही-सही दर्ज करें</string>
     <string name="skills">कौशल</string>
     <string name="progress">प्रगति</string>
     <string name="additional_info">अतिरिक्त जानकारी</string>
@@ -32,5 +32,6 @@
     <string name="account">बनाएं</string>
     <string name="want_to_contribute">क्या आप इस सामाजिक कार्य में योगदान देना चाहते हैं?</string>
     <string name="become_a_mentor">गुरु बनें!</string>
+    <string name="redirect_sign_in">क्या आपके पास पहले से एक खाता मौजूद है? साइन इन करने के लिए यहाँ क्लिक करें!</string>
 
 </resources>

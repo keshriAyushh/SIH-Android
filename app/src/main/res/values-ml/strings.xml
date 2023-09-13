@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">ഗ്രാമീണ വിദ്യാഭ്യാസ സഹകരണം</string>
-    <string name="fill_all_details">ദയവായി എല്ലാ വിശദാംശങ്ങളും നൽകുക</string>
+    <string name="fill_all_details">എല്ലാ വിശദാംശങ്ങളും ശരിയായി നൽകുക</string>
     <string name="skills">കഴിവുകൾ</string>
     <string name="progress">പുരോഗതി</string>
     <string name="additional_info">അധിക വിവരം</string>
@@ -32,4 +32,5 @@
     <string name="account">സൃഷ്ടിക്കുക</string>
     <string name="want_to_contribute">ഈ സാമൂഹിക ലക്ഷ്യത്തിൽ സംഭാവന നൽകാൻ ആഗ്രഹിക്കുന്നുണ്ടോ?</string>
     <string name="become_a_mentor">ഒരു ഉപദേശകനാകൂ!</string>
+    <string name="redirect_sign_in">ഇതിനകം ഒരു അക്കൗണ്ട് ഉണ്ടോ? സൈൻ ഇൻ ചെയ്യാൻ ഇവിടെ ക്ലിക്ക് ചെയ്യുക!</string>
 </resources>

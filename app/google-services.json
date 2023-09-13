@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "254773996494",
+    "firebase_url": "https://grameenshikhsasahyog-default-rtdb.firebaseio.com",
+    "project_id": "grameenshikhsasahyog",
+    "storage_bucket": "grameenshikhsasahyog.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:254773996494:android:507d9ca684c72b1a82d99f",
+        "android_client_info": {
+          "package_name": "com.sih.graminshikshasahyog"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwUAXxt0IJUVYJXkUrIFMvq-fXhOUVhfk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

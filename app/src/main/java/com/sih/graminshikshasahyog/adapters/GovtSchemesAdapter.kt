@@ -27,7 +27,7 @@ class GovtSchemesAdapter (
 
         fun bind(schemeItem:GovtSchemes){
             binding.tvSchemeTitle.text=schemeItem.scheme
-            binding.tvEligibility.text=schemeItem.eligibility
+            binding.tvEligibility.text=schemeItem.desc
     }
     }
     }

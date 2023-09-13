@@ -125,7 +125,7 @@ class StudentSignUpActivity : AppCompatActivity() {
             "looking for" to preference
         )
 
-        firestore.collection("studentuserDB").document(email).set(data)
+        firestore.collection("studentuserDB").document().set(data)
             .addOnSuccessListener { documentReference ->
                 Toast.makeText(applicationContext,"database created",Toast.LENGTH_SHORT).show()
             }

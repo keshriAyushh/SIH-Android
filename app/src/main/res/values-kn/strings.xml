@@ -18,4 +18,20 @@
     <string name="male">ಪುರುಷ</string>
     <string name="female">ಹೆಣ್ಣು</string>
     <string name="others">ಇತರ ಲಿಂಗ</string>
+    <string name="sign_in">ಸೈನ್ ಇನ್ ಮಾಡಿ</string>
+    <string name="password">ಪಾಸ್ವರ್ಡ್</string>
+    <string name="forgot_password">ಪಾಸ್ವರ್ಡ್ ಮರೆತಿರಾ?</string>
+    <string name="mobilno_email">ಮೊಬೈಲ್ ಸಂಖ್ಯೆ/ಇಮೇಲ್ ಐಡಿ</string>
+    <string name="new_here">ಇಲ್ಲಿ ಹೊಸದಾ? ಖಾತೆಯನ್ನು ರಚಿಸಿ</string>
+    <string name="name">ಹೆಸರು</string>
+    <string name="email">ಇಮೇಲ್</string>
+    <string name="qualification">ಅರ್ಹತೆ</string>
+    <string name="jobs">ಉದ್ಯೋಗಗಳು</string>
+    <string name="sign_up">ಸೈನ್ ಅಪ್</string>
+    <string name="create">ಖಾತೆ</string>
+    <string name="account">ರಚಿಸಿ</string>
+    <string name="want_to_contribute">ಈ ಸಾಮಾಜಿಕ ಕಾರಣಕ್ಕೆ ಕೊಡುಗೆ ನೀಡಲು ಬಯಸುವಿರಾ?</string>
+    <string name="become_a_mentor">ಮಾರ್ಗದರ್ಶಕರಾಗಿ!</string>
+
+
 </resources>

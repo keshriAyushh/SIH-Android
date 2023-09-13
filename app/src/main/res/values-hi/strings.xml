@@ -18,4 +18,19 @@
     <string name="male">पुरुष</string>
     <string name="female">महिला</string>
     <string name="others">अन्य लिंग</string>
+    <string name="sign_in">साइन इन करें</string>
+    <string name="password">पासवर्ड</string>
+    <string name="forgot_password">पासवर्ड भूल गए?</string>
+    <string name="mobilno_email">मोबाइल नंबर/ईमेल आईडी</string>
+    <string name="new_here">यहाँ नये हैं? खाता बनाएँ</string>
+    <string name="name">नाम</string>
+    <string name="email">ईमेल</string>
+    <string name="qualification">योग्यता</string>
+    <string name="jobs">नौकरियां</string>
+    <string name="sign_up">"साइन अप "</string>
+    <string name="create">"खाता "</string>
+    <string name="account">बनाएं</string>
+    <string name="want_to_contribute">क्या आप इस सामाजिक कार्य में योगदान देना चाहते हैं?</string>
+    <string name="become_a_mentor">गुरु बनें!</string>
+
 </resources>

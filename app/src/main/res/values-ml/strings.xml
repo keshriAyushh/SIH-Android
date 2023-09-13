@@ -18,4 +18,18 @@
     <string name="male">ആൺ</string>
     <string name="female">സ്ത്രീ</string>
     <string name="others">മറ്റ് ലിംഗഭേദം</string>
+    <string name="sign_in">സൈൻ ഇൻ ചെയ്യുക</string>
+    <string name="password">പാസ്വേഡ്</string>
+    <string name="forgot_password">പാസ്വേഡ് മറന്നോ?</string>
+    <string name="mobilno_email">മൊബൈൽ നമ്പർ / ഇമെയിൽ ഐഡി</string>
+    <string name="new_here">ഇവിടെ പുതിയതാണോ?ഒരു അക്കൗണ്ട് സൃഷ്‌ടിക്കുക</string>
+    <string name="name">പേര്</string>
+    <string name="email">ഇമെയിൽ</string>
+    <string name="qualification">യോഗ്യത</string>
+    <string name="jobs">ജോലികൾ</string>
+    <string name="sign_up">സൈൻ അപ്പ്</string>
+    <string name="create">"അക്കൗണ്ട് "</string>
+    <string name="account">സൃഷ്ടിക്കുക</string>
+    <string name="want_to_contribute">ഈ സാമൂഹിക ലക്ഷ്യത്തിൽ സംഭാവന നൽകാൻ ആഗ്രഹിക്കുന്നുണ്ടോ?</string>
+    <string name="become_a_mentor">ഒരു ഉപദേശകനാകൂ!</string>
 </resources>

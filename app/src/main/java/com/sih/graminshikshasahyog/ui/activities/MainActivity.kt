@@ -21,34 +21,28 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         supportActionBar?.title = "Skills"
         //Whenever the activity opens, set the skills fragment as default
-        setFragment(SkillsFragment("Learn", "Progress"))
+        setFragment(SkillsFragment(getString(R.string.learn), getString(R.string.progress)))
 
         binding.bottomNav.setOnItemSelectedListener {
             //Replacing the fragments depending upon the item clicked
             when(it.itemId) {
                 R.id.skills -> {
-                    setFragment(SkillsFragment("Learn", "Progress"))
-                    supportActionBar?.title = "Skills"
+                    setFragment(SkillsFragment(getString(R.string.learn), getString(R.string.progress)))
                 }
                 R.id.jobs -> {
                     setFragment(JobsFragment())
-                    supportActionBar?.title = "Jobs"
                 }
                 R.id.mentor -> {
-                    setFragment(MentorFragment())
-                    supportActionBar?.title = "Mentor"
+                    setFragment(MentorFragment(getString(R.string.find_mentors), getString(R.string.your_mentors)))
                 }
                 R.id.ruralAid -> {
-                    setFragment(RuralAidFragment("Govt. Schemes", "NGO Funding"))
-                    supportActionBar?.title = "Rural Aid"
+                    setFragment(RuralAidFragment(getString(R.string.govt_schemes), getString(R.string.ngo_schemes)))
                 }
                 R.id.account -> {
                     setFragment(AccountFragment())
-                    supportActionBar?.title = "Account"
                 }
                 else -> {
-                    setFragment(SkillsFragment("Learn", "Progress"))
-                    supportActionBar?.title = "Skills"
+                    setFragment(SkillsFragment(getString(R.string.learn), getString(R.string.progress)))
                 }
             }
             true

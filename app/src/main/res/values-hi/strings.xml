@@ -46,5 +46,10 @@
     <string name="quizzes_taken">"क्विज़ जो दिए गए हैं: "</string>
     <string name="quiz_avg_score">"औसत क्विज़ स्कोर: "</string>
     <string name="score_benefit">कौशल स्कोर गैर सरकारी संगठनों को छात्रवृत्ति, प्रोत्साहन और ऋण देने में मदद करता है</string>
+    <string name="find_mentors">गुरु खोजें</string>
+    <string name="your_mentors">आपके गुरु</string>
+    <string name="govt_schemes">सरकारी. योजनाएं</string>
+    <string name="ngo_schemes">एनजीओ योजनाएं</string>
+    <string name="learn">सीखो</string>
 
 </resources>

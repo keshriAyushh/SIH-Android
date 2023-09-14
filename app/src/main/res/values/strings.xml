@@ -63,4 +63,9 @@
     <string name="quizzes_taken">Quizzes Taken: </string>
     <string name="quiz_avg_score">Average Quiz Score: </string>
     <string name="score_benefit">Skill score helps NGOs to award scholarships, incentives and loans.</string>
+    <string name="find_mentors">Find Mentors</string>
+    <string name="your_mentors">Your Mentors</string>
+    <string name="govt_schemes">Govt. Schemes</string>
+    <string name="ngo_schemes">NGO Schemes</string>
+    <string name="learn">Learn</string>
 </resources>

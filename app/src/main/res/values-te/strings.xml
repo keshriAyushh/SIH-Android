@@ -46,4 +46,9 @@
     <string name="quizzes_taken">"ఇచ్చిన క్విజ్‌లు: "</string>
     <string name="quiz_avg_score">"సగటు క్విజ్ స్కోరు: "</string>
     <string name="score_benefit">స్కాలర్‌షిప్‌లు, ప్రోత్సాహకాలు మరియు రుణాలను అందించడానికి NGOలకు నైపుణ్య స్కోర్ సహాయపడుతుంది</string>
+    <string name="find_mentors">మార్గదర్శకులను కనుగొనండి</string>
+    <string name="your_mentors">మీ మార్గదర్శకులు</string>
+    <string name="govt_schemes">ప్రభుత్వ పథకాలు</string>
+    <string name="ngo_schemes">ఎన్జీవో పథకాలు</string>
+    <string name="learn">నేర్చుకో</string>
 </resources>

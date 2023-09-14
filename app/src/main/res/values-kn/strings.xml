@@ -46,6 +46,11 @@
     <string name="quizzes_taken">"ನೀಡಿದ ರಸಪ್ರಶ್ನೆಗಳು: "</string>
     <string name="quiz_avg_score">"ಸರಾಸರಿ ರಸಪ್ರಶ್ನೆ ಸ್ಕೋರ್: "</string>
     <string name="score_benefit">ಸ್ಕಿಲ್ ಸ್ಕೋರ್ ಎನ್‌ಜಿಒಗಳಿಗೆ ವಿದ್ಯಾರ್ಥಿವೇತನ, ಪ್ರೋತ್ಸಾಹ ಮತ್ತು ಸಾಲಗಳನ್ನು ನೀಡಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ</string>
+    <string name="find_mentors">ಮಾರ್ಗದರ್ಶಕರನ್ನು ಹುಡುಕಿ</string>
+    <string name="your_mentors">ನಿಮ್ಮ ಮಾರ್ಗದರ್ಶಕರು</string>
+    <string name="govt_schemes">ಸರಕಾರ ಯೋಜನೆಗಳು</string>
+    <string name="ngo_schemes">ಎನ್‌ಜಿಒ ಯೋಜನೆಗಳು</string>
+    <string name="learn">ಕಲಿಯಿರಿ</string>
 
 
 </resources>

@@ -29,7 +29,10 @@ class FundingFragment : Fragment() {
         val list : MutableList<NGOSchemes>  = mutableListOf()
         val firestore: FirebaseFirestore = FirebaseFirestore.getInstance()
         val collectionref : CollectionReference = firestore.collection("ngoDB")
+        var courseAdapter: CourseAdapter
         binding = FragmentFundingBinding.inflate(layoutInflater)
+
+
 
         collectionref.get()
             .addOnCompleteListener { task ->
@@ -39,11 +42,13 @@ class FundingFragment : Fragment() {
 
                         val data = document.data
 
-                        val schemeModel = NGOSchemes(
-                            data["name"].toString(),
-                            data["shortdesc"].toString(),
+                        val schemeModel: NGOSchemes = NGOSchemes(
+                            data.get("name").toString(),
+                            data.get("shortdesc").toString(),
                             "",
                             documentId
+
+
                         )
                         list.add(schemeModel)
                     }

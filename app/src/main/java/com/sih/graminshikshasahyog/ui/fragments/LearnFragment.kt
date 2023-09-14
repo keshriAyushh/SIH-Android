@@ -44,7 +44,10 @@ class LearnFragment : Fragment() {
                             data.get("name").toString(),
                             data.get("level").toString(),
                             data.get("author").toString(),
-                            data.get("createdOn").toString()
+                            data.get("createdOn").toString(),
+                           documentId ,
+                           documentId
+
                         )
                         list.add(courseModel)
                     }

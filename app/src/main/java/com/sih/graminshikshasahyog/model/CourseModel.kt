@@ -5,5 +5,6 @@ data class CourseModel(
     val description: String,
     val author: String = "",
     val dateCreated: String = "",
-    val thumbnail: String = ""
+    val thumbnail: String = "",
+    val code : String
 )

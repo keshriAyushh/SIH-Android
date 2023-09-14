@@ -47,6 +47,7 @@ class SignInActivity : AppCompatActivity() {
     private fun signIn() {
         val email = binding.etSIEmail.text.toString().trim()
         val pass = binding.etSIPass.text.toString().trim()
+        auth = FirebaseAuth.getInstance()
         if (email.isEmpty() == true or pass.isEmpty()) {
             Toast.makeText(this@SignInActivity, "Enter email and password!", Toast.LENGTH_SHORT)
                 .show()

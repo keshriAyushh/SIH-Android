@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.CollectionReference
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.ktx.toObject
 import com.sih.graminshikshasahyog.R
@@ -21,6 +22,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.tasks.await
+import java.util.Objects
 
 
 class AccountFragment : Fragment() {
@@ -34,17 +36,19 @@ class AccountFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
 
+
         binding = FragmentAccountBinding.inflate(layoutInflater)
 
         auth = FirebaseAuth.getInstance()
         firestore = FirebaseFirestore.getInstance()
 
-//        val student = getStudentDetails()
-//
-//        binding.tvName.text = student.name
-//        binding.tvDOBValue.text = student.dob
-//        binding.tvPhoneValue.text = student.phone
-//        binding.tvGenderValue.text = student.gender
+        var student : MutableMap<String,Any> = getStudentDetails()
+        Log.d("account2",student.toString())
+
+        binding.tvName.setText(student.get("name").toString())
+        binding.tvDOBValue.text = student.get("dob").toString()
+        binding.tvPhoneValue.text = student.get("phone").toString()
+        binding.tvGenderValue.text = student.get("gender").toString()
 
 //        if(student.email.isNotEmpty()) {
 //            binding.block3.visibility = View.GONE
@@ -60,7 +64,32 @@ class AccountFragment : Fragment() {
         return binding.root
     }
 
-    private fun getStudentDetails() {
+
+
+    private fun currentUser() : String {
+        auth = FirebaseAuth.getInstance()
+        val user  = auth.currentUser
+        if (user != null) {
+            return user.uid.toString()
+        }
+        else return "null"
+    }
+
+    private fun getStudentDetails(): MutableMap<String,Any> {
         //TODO: Fetch user details here and return it to display its details
+        val userid = currentUser()
+        var data:MutableMap<String, Any> = mutableMapOf<String, Any>()
+        val firestore: FirebaseFirestore = FirebaseFirestore.getInstance()
+        val collectionref : CollectionReference = firestore.collection("studentuserDB")
+        val documentref = collectionref.document(userid)
+        documentref.get().addOnCompleteListener { task ->
+            val document = task.result
+
+            if(document.exists()){
+                data = document.data!!
+
+            }
+        }
+        return data
     }
 }

@@ -10,19 +10,11 @@ import android.view.ViewGroup
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.CollectionReference
 import com.google.firebase.firestore.FirebaseFirestore
-import com.google.firebase.firestore.ktx.toObject
-import com.sih.graminshikshasahyog.R
-import com.sih.graminshikshasahyog.adapters.GovtSchemesAdapter
-import com.sih.graminshikshasahyog.core.Constants
 import com.sih.graminshikshasahyog.databinding.FragmentAccountBinding
-import com.sih.graminshikshasahyog.model.GovtSchemes
-import com.sih.graminshikshasahyog.model.Student
 import com.sih.graminshikshasahyog.ui.activities.SignInActivity
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.tasks.await
-import java.util.Objects
 
 
 class AccountFragment : Fragment() {

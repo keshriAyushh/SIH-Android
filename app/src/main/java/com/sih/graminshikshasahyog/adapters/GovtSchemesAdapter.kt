@@ -9,14 +9,14 @@ import com.sih.graminshikshasahyog.model.GovtSchemes
 class GovtSchemesAdapter (
 
     val schemeList:List<GovtSchemes>
-    ): RecyclerView.Adapter<GovtSchemesAdapter.SchemeViewHolder>(){
+    ): RecyclerView.Adapter<com.sih.graminshikshasahyog.adapters.GovtSchemesAdapter.SchemeViewHolder>(){
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SchemeViewHolder {
         val binding=GovtSchemeItemBinding.inflate(LayoutInflater.from(parent.context),parent,false)
         return SchemeViewHolder(binding)
     }
 
-    override fun onBindViewHolder(holder: GovtSchemesAdapter.SchemeViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: com.sih.graminshikshasahyog.adapters.GovtSchemesAdapter.SchemeViewHolder, position: Int) {
         val schemeItem:GovtSchemes=schemeList[position]
         holder.bind(schemeItem)
     }

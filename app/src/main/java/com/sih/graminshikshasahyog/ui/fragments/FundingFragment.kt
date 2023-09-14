@@ -9,20 +9,15 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.firestore.CollectionReference
 import com.google.firebase.firestore.FirebaseFirestore
-import com.sih.graminshikshasahyog.R
 import com.sih.graminshikshasahyog.adapters.CourseAdapter
-import com.sih.graminshikshasahyog.adapters.GovtSchemesAdapter
 import com.sih.graminshikshasahyog.databinding.FragmentFundingBinding
-import com.sih.graminshikshasahyog.databinding.FragmentGovtSchemesBinding
-import com.sih.graminshikshasahyog.databinding.FragmentLearnBinding
-import com.sih.graminshikshasahyog.model.CourseModel
 import com.sih.graminshikshasahyog.model.GovtSchemes
 
 
 class FundingFragment : Fragment() {
 
     private lateinit var binding: FragmentFundingBinding
-    private lateinit var schemeAdapter: GovtSchemesAdapter
+    private lateinit var schemeAdapter: NGOSchemeAdapter
 
 
     override fun onCreateView(
@@ -56,7 +51,7 @@ class FundingFragment : Fragment() {
                         list.add(schemeModel)
                     }
                     Log.d("hell",list.toString())
-                    schemeAdapter = GovtSchemesAdapter(list)
+                    schemeAdapter = NGOSchemeAdapter(list)
                     binding.fundingRecyclerView.adapter = schemeAdapter
                     schemeAdapter.notifyDataSetChanged()
                 }

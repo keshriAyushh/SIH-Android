@@ -17,12 +17,14 @@
         android:theme="@style/Theme.GraminShikshaSahyog"
         tools:targetApi="31">
         <activity
+            android:name=".ui.activities.NGO_form"
+            android:exported="false" />
+        <activity
             android:name=".ui.activities.MentorSignUpActivity"
             android:exported="false" />
         <activity
             android:name=".ui.activities.StudentSignUpActivity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -31,14 +33,10 @@
         </activity>
         <activity
             android:name=".ui.activities.SignInActivity"
-            android:exported="true" >
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".ui.activities.MainActivity"
-            android:exported="true">
-
-
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>

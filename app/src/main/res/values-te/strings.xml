@@ -33,4 +33,17 @@
     <string name="want_to_contribute">ఈ సామాజిక ప్రయోజనానికి సహకరించాలనుకుంటున్నారా?</string>
     <string name="become_a_mentor">మెంటార్ అవ్వండి!</string>
     <string name="redirect_sign_in">ఇప్పటికే ఖాతా ఉందా? సైన్ ఇన్ చేయడానికి ఇక్కడ క్లిక్ చేయండి!</string>
+    <string name="badges_text">బ్యాడ్జ్‌లు సంపాదించారు</string>
+    <string name="courses_number_text">10+ కోర్సులు</string>
+    <string name="english_course">ఇంగ్లీష్ కోర్స్</string>
+    <string name="computer_course">కంప్యూటర్ కోర్సు</string>
+    <string name="skill_grade">మీ నైపుణ్యం స్థాయి</string>
+    <string name="positive_feedback_text">మీరు అద్భుతంగా చేస్తున్నారు!</string>
+    <string name="motivational_feedback_text">నువ్వు ఇంతకన్నా బాగా చేయగలవు!</string>
+    <string name="negatice_feedback_text">మీ పనితీరు మార్కుకు చేరుకోలేదు!</string>
+    <string name="courses_enrolled">నమోదు చేసుకున్న కోర్సులు:</string>
+    <string name="courses_completed">"పూర్తి చేసిన కోర్సులు: "</string>
+    <string name="quizzes_taken">"ఇచ్చిన క్విజ్‌లు: "</string>
+    <string name="quiz_avg_score">"సగటు క్విజ్ స్కోరు: "</string>
+    <string name="score_benefit">స్కాలర్‌షిప్‌లు, ప్రోత్సాహకాలు మరియు రుణాలను అందించడానికి NGOలకు నైపుణ్య స్కోర్ సహాయపడుతుంది</string>
 </resources>

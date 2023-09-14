@@ -20,6 +20,7 @@ class SignInActivity : AppCompatActivity() {
         binding = ActivitySignInBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        auth = FirebaseAuth.getInstance()
         binding.tvNewHere.setOnClickListener {
             newHere()
         }

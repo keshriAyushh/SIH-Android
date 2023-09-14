@@ -27,18 +27,16 @@ class GovtSchemesFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val list : MutableList<GovtSchemes>  = mutableListOf()
+        val list: MutableList<GovtSchemes> = mutableListOf()
         val firestore: FirebaseFirestore = FirebaseFirestore.getInstance()
-        val collectionref : CollectionReference = firestore.collection("ruralAidGovtDB")
+        val collectionref: CollectionReference = firestore.collection("ruralAidGovtDB")
         var courseAdapter: CourseAdapter
         binding = FragmentGovtSchemesBinding.inflate(layoutInflater)
 
-
-
         collectionref.get()
             .addOnCompleteListener { task ->
-                if(task.isSuccessful) {
-                    for (document in task.result!!){
+                if (task.isSuccessful) {
+                    for (document in task.result!!) {
                         val documentId = document.id
 
                         val data = document.data
@@ -52,41 +50,13 @@ class GovtSchemesFragment : Fragment() {
                         )
                         list.add(schemeModel)
                     }
-                    Log.d("hell",list.toString())
+                    Log.d("hell", list.toString())
                     schemeAdapter = GovtSchemesAdapter(list)
                     binding.schemeRecyclerView.adapter = schemeAdapter
                     schemeAdapter.notifyDataSetChanged()
                 }
             }
-
-
-
-//        schemeAdapter = GovtSchemesAdapter(
-//            listOf(
-//                GovtSchemes(
-//                    "Ishan Uday Scholarship",
-//                    "For North-Eastern UG and PG students",
-//                ),
-//
-//                GovtSchemes(
-//                    "AICTE Pragati Scholarship Scheme for Girls",
-//                    "For girls pursuing UG",
-//                ),
-//                GovtSchemes(
-//                    "State Merit Scholarship(SMS)",
-//                    "For Students graduating from Kerala"
-//                ),
-//                GovtSchemes(
-//                    "Rural Youth Development Program",
-//                "All Indian Citizens",
-//                )
-//
-//            )
-//
-//        )
-
-//        binding.schemeRecyclerView.adapter=schemeAdapter
-        binding.schemeRecyclerView.layoutManager=LinearLayoutManager(requireContext())
+        binding.schemeRecyclerView.layoutManager = LinearLayoutManager(requireContext())
 
         return binding.root
 

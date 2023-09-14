@@ -44,4 +44,23 @@
     <string name="want_to_contribute">Want to contribute to this social cause?</string>
     <string name="become_a_mentor">Become a Mentor!</string>
     <string name="redirect_sign_in">Already have an account? Click here to Sign in!</string>
+
+    <string name="badges_text">Badges Earned</string>
+    <string name="courses_number_text">10+ Courses</string>
+    <string name="english_course">English Course</string>
+    <string name="computer_course">Computer Course</string>
+    <string name="skill_grade">Your Skill Grade</string>
+    <string name="grade_A" translatable="false">A</string>
+    <string name="grade_B" translatable="false">B</string>
+    <string name="grade_C" translatable="false">C</string>
+    <string name="grade_D" translatable="false">D</string>
+    <string name="grade_E" translatable="false">E</string>
+    <string name="positive_feedback_text">You are doing amazing!</string>
+    <string name="motivational_feedback_text">You can do better!</string>
+    <string name="negatice_feedback_text">Your performance has not been up to the mark!</string>
+    <string name="courses_enrolled">Courses Enrolled: </string>
+    <string name="courses_completed">Courses Completed: </string>
+    <string name="quizzes_taken">Quizzes Taken: </string>
+    <string name="quiz_avg_score">Average Quiz Score: </string>
+    <string name="score_benefit">Skill score helps NGOs to award scholarships, incentives and loans.</string>
 </resources>

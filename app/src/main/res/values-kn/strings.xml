@@ -33,6 +33,19 @@
     <string name="want_to_contribute">ಈ ಸಾಮಾಜಿಕ ಕಾರಣಕ್ಕೆ ಕೊಡುಗೆ ನೀಡಲು ಬಯಸುವಿರಾ?</string>
     <string name="become_a_mentor">ಮಾರ್ಗದರ್ಶಕರಾಗಿ!</string>
     <string name="redirect_sign_in">ಈಗಾಗಲೇ ಖಾತೆ ಹೊಂದಿದ್ದೀರ? ಸೈನ್ ಇನ್ ಮಾಡಲು ಇಲ್ಲಿ ಕ್ಲಿಕ್ ಮಾಡಿ!</string>
+    <string name="badges_text">ಗಳಿಸಿದ ಬ್ಯಾಡ್ಜ್‌ಗಳು</string>
+    <string name="courses_number_text">10+ ಕೋರ್ಸ್‌ಗಳು</string>
+    <string name="english_course">ಇಂಗ್ಲಿಷ್ ಕೋರ್ಸ್</string>
+    <string name="computer_course">ಕಂಪ್ಯೂಟರ್ ಕೋರ್ಸ್</string>
+    <string name="skill_grade">ನಿಮ್ಮ ಕೌಶಲ್ಯ ದರ್ಜೆ</string>
+    <string name="positive_feedback_text">ನೀವು ಅದ್ಭುತ ಮಾಡುತ್ತಿದ್ದೀರಿ!</string>
+    <string name="motivational_feedback_text">ನೀವು ಉತ್ತಮವಾಗಿ ಮಾಡಬಹುದು!</string>
+    <string name="negatice_feedback_text">ನಿಮ್ಮ ಕಾರ್ಯಕ್ಷಮತೆಯು ಮಾರ್ಕ್ ಅನ್ನು ತಲುಪಿಲ್ಲ!</string>
+    <string name="courses_enrolled">ದಾಖಲಾದ ಕೋರ್ಸ್‌ಗಳು:</string>
+    <string name="courses_completed">"ಪೂರ್ಣಗೊಳಿಸಿದ ಕೋರ್ಸ್‌ಗಳು: "</string>
+    <string name="quizzes_taken">"ನೀಡಿದ ರಸಪ್ರಶ್ನೆಗಳು: "</string>
+    <string name="quiz_avg_score">"ಸರಾಸರಿ ರಸಪ್ರಶ್ನೆ ಸ್ಕೋರ್: "</string>
+    <string name="score_benefit">ಸ್ಕಿಲ್ ಸ್ಕೋರ್ ಎನ್‌ಜಿಒಗಳಿಗೆ ವಿದ್ಯಾರ್ಥಿವೇತನ, ಪ್ರೋತ್ಸಾಹ ಮತ್ತು ಸಾಲಗಳನ್ನು ನೀಡಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ</string>
 
 
 </resources>

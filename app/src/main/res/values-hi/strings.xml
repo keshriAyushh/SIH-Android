@@ -33,5 +33,18 @@
     <string name="want_to_contribute">क्या आप इस सामाजिक कार्य में योगदान देना चाहते हैं?</string>
     <string name="become_a_mentor">गुरु बनें!</string>
     <string name="redirect_sign_in">क्या आपके पास पहले से एक खाता मौजूद है? साइन इन करने के लिए यहाँ क्लिक करें!</string>
+    <string name="badges_text">बैज अर्जित किए गए</string>
+    <string name="courses_number_text">10+ पाठ्यक्रम</string>
+    <string name="english_course">अंग्रेजी पाठ्यक्रम</string>
+    <string name="computer_course">कम्प्यूटर कोर्स</string>
+    <string name="skill_grade">आपके कौशल का ग्रेड</string>
+    <string name="positive_feedback_text">आप अद्भुत कर रहे हैं!</string>
+    <string name="motivational_feedback_text">आप बेहतर कर सकते हैं!</string>
+    <string name="negatice_feedback_text">आपका प्रदर्शन अच्छा नहीं रहा!</string>
+    <string name="courses_enrolled">नामांकित पाठ्यक्रम:</string>
+    <string name="courses_completed">"पूर्ण किये गये पाठ्यक्रम: "</string>
+    <string name="quizzes_taken">"क्विज़ जो दिए गए हैं: "</string>
+    <string name="quiz_avg_score">"औसत क्विज़ स्कोर: "</string>
+    <string name="score_benefit">कौशल स्कोर गैर सरकारी संगठनों को छात्रवृत्ति, प्रोत्साहन और ऋण देने में मदद करता है</string>
 
 </resources>

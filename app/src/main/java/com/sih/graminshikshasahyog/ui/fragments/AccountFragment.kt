@@ -70,7 +70,7 @@ class AccountFragment : Fragment() {
         auth = FirebaseAuth.getInstance()
         val user  = auth.currentUser
         if (user != null) {
-            return user.uid.toString()
+            return user.uid
         }
         else return "null"
     }
@@ -82,14 +82,17 @@ class AccountFragment : Fragment() {
         val firestore: FirebaseFirestore = FirebaseFirestore.getInstance()
         val collectionref : CollectionReference = firestore.collection("studentuserDB")
         val documentref = collectionref.document(userid)
-        documentref.get().addOnCompleteListener { task ->
-            val document = task.result
 
-            if(document.exists()){
-                data = document.data!!
+        GlobalScope.launch(Dispatchers.IO) {
+            documentref.get().addOnCompleteListener { task ->
+                val document = task.result
 
+                if(document.exists()){
+                    data = document.data!!
+                }
             }
         }
+
         return data
     }
 }

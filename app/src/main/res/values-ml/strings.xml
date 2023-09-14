@@ -33,4 +33,17 @@
     <string name="want_to_contribute">ഈ സാമൂഹിക ലക്ഷ്യത്തിൽ സംഭാവന നൽകാൻ ആഗ്രഹിക്കുന്നുണ്ടോ?</string>
     <string name="become_a_mentor">ഒരു ഉപദേശകനാകൂ!</string>
     <string name="redirect_sign_in">ഇതിനകം ഒരു അക്കൗണ്ട് ഉണ്ടോ? സൈൻ ഇൻ ചെയ്യാൻ ഇവിടെ ക്ലിക്ക് ചെയ്യുക!</string>
+    <string name="badges_text">ബാഡ്ജുകൾ സമ്പാദിച്ചു</string>
+    <string name="courses_number_text">10+ കോഴ്സുകൾ</string>
+    <string name="english_course">ഇംഗ്ലീഷ് കോഴ്സ്</string>
+    <string name="computer_course">കംപ്യൂട്ടർ കോഴ്സ്</string>
+    <string name="skill_grade">നിങ്ങളുടെ നൈപുണ്യ ഗ്രേഡ്</string>
+    <string name="positive_feedback_text">നിങ്ങൾ അത്ഭുതകരമായി പ്രവർത്തിക്കുന്നു!</string>
+    <string name="motivational_feedback_text">നിങ്ങൾക്ക് നന്നായി ചെയ്യാൻ കഴിയും!</string>
+    <string name="negatice_feedback_text">നിങ്ങളുടെ പ്രകടനം മാർക്കിൽ എത്തിയിട്ടില്ല!</string>
+    <string name="courses_enrolled">എൻറോൾ ചെയ്ത കോഴ്സുകൾ:</string>
+    <string name="courses_completed">"പൂർത്തിയാക്കിയ കോഴ്സുകൾ: "</string>
+    <string name="quizzes_taken">"നൽകിയിട്ടുള്ള ക്വിസുകൾ: "</string>
+    <string name="quiz_avg_score">"ശരാശരി ക്വിസ് സ്കോർ: "</string>
+    <string name="score_benefit">സ്കോളർഷിപ്പുകൾ, പ്രോത്സാഹനങ്ങൾ, വായ്പകൾ എന്നിവ നൽകാൻ സ്കിൽ സ്കോർ എൻജിഒകളെ സഹായിക്കുന്നു</string>
 </resources>

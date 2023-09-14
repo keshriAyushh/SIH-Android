@@ -49,7 +49,7 @@ class GovtSchemesFragment : Fragment() {
                         list.add(schemeModel)
                     }
                     Log.d("hell", list.toString())
-                    schemeAdapter = GovtSchemesAdapter(list)
+                    schemeAdapter = GovtSchemesAdapter(list, requireActivity().applicationContext)
                     binding.schemeRecyclerView.adapter = schemeAdapter
                     schemeAdapter.notifyDataSetChanged()
                 }

@@ -53,7 +53,7 @@ class FundingFragment : Fragment() {
                         list.add(schemeModel)
                     }
                     Log.d("hell",list.toString())
-                    schemeAdapter = NGOSchemeAdapter(list)
+                    schemeAdapter = NGOSchemeAdapter(list,requireActivity().applicationContext)
                     binding.fundingRecyclerView.adapter = schemeAdapter
                     schemeAdapter.notifyDataSetChanged()
                 }

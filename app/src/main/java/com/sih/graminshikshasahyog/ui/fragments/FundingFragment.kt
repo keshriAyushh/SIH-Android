@@ -1,60 +1,101 @@
 package com.sih.graminshikshasahyog.ui.fragments
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.firebase.firestore.CollectionReference
+import com.google.firebase.firestore.FirebaseFirestore
 import com.sih.graminshikshasahyog.R
+import com.sih.graminshikshasahyog.adapters.CourseAdapter
+import com.sih.graminshikshasahyog.adapters.GovtSchemesAdapter
+import com.sih.graminshikshasahyog.databinding.FragmentFundingBinding
+import com.sih.graminshikshasahyog.databinding.FragmentGovtSchemesBinding
+import com.sih.graminshikshasahyog.databinding.FragmentLearnBinding
+import com.sih.graminshikshasahyog.model.CourseModel
+import com.sih.graminshikshasahyog.model.GovtSchemes
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [FundingFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class FundingFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
+    private lateinit var binding: FragmentFundingBinding
+    private lateinit var schemeAdapter: GovtSchemesAdapter
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_funding, container, false)
-    }
+        val list : MutableList<GovtSchemes>  = mutableListOf()
+        val firestore: FirebaseFirestore = FirebaseFirestore.getInstance()
+        val collectionref : CollectionReference = firestore.collection("ngoDB")
+        var courseAdapter: CourseAdapter
+        binding = FragmentFundingBinding.inflate(layoutInflater)
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment FundingFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            FundingFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
+
+
+        collectionref.get()
+            .addOnCompleteListener { task ->
+                if(task.isSuccessful) {
+                    for (document in task.result!!){
+                        val documentId = document.id
+
+                        val data = document.data
+
+                        val schemeModel: GovtSchemes = GovtSchemes(
+                            data.get("name").toString(),
+                            data.get("shortdesc").toString(),
+                            "",
+                            documentId
+
+
+                        )
+                        list.add(schemeModel)
+                    }
+                    Log.d("hell",list.toString())
+                    schemeAdapter = GovtSchemesAdapter(list)
+                    binding.fundingRecyclerView.adapter = schemeAdapter
+                    schemeAdapter.notifyDataSetChanged()
                 }
             }
+
+
+
+//        schemeAdapter = GovtSchemesAdapter(
+//            listOf(
+//                GovtSchemes(
+//                    "Ishan Uday Scholarship",
+//                    "For North-Eastern UG and PG students",
+//                ),
+//
+//                GovtSchemes(
+//                    "AICTE Pragati Scholarship Scheme for Girls",
+//                    "For girls pursuing UG",
+//                ),
+//                GovtSchemes(
+//                    "State Merit Scholarship(SMS)",
+//                    "For Students graduating from Kerala"
+//                ),
+//                GovtSchemes(
+//                    "Rural Youth Development Program",
+//                "All Indian Citizens",
+//                )
+//
+//            )
+//
+//        )
+
+//        binding.schemeRecyclerView.adapter=schemeAdapter
+        binding.fundingRecyclerView.layoutManager=LinearLayoutManager(requireContext())
+
+        return binding.root
+
     }
 }
+
+
+
+

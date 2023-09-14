@@ -10,8 +10,10 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.firestore.CollectionReference
 import com.google.firebase.firestore.FirebaseFirestore
 import com.sih.graminshikshasahyog.adapters.CourseAdapter
+import com.sih.graminshikshasahyog.adapters.NGOSchemeAdapter
 import com.sih.graminshikshasahyog.databinding.FragmentFundingBinding
 import com.sih.graminshikshasahyog.model.GovtSchemes
+import com.sih.graminshikshasahyog.model.NGOSchemes
 
 
 class FundingFragment : Fragment() {
@@ -24,13 +26,10 @@ class FundingFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val list : MutableList<GovtSchemes>  = mutableListOf()
+        val list : MutableList<NGOSchemes>  = mutableListOf()
         val firestore: FirebaseFirestore = FirebaseFirestore.getInstance()
         val collectionref : CollectionReference = firestore.collection("ngoDB")
-        var courseAdapter: CourseAdapter
         binding = FragmentFundingBinding.inflate(layoutInflater)
-
-
 
         collectionref.get()
             .addOnCompleteListener { task ->
@@ -40,13 +39,11 @@ class FundingFragment : Fragment() {
 
                         val data = document.data
 
-                        val schemeModel: GovtSchemes = GovtSchemes(
-                            data.get("name").toString(),
-                            data.get("shortdesc").toString(),
+                        val schemeModel = NGOSchemes(
+                            data["name"].toString(),
+                            data["shortdesc"].toString(),
                             "",
                             documentId
-
-
                         )
                         list.add(schemeModel)
                     }

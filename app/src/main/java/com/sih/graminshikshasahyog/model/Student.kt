@@ -9,5 +9,6 @@ data class Student(
     val dob: String,
     val qualification: String,
     val preference: String,
-    val profilePicture: String = ""
+    val profilePicture: String = "",
+    val userId: String
 )

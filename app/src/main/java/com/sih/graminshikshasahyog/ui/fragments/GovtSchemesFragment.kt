@@ -10,13 +10,15 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.firestore.CollectionReference
 import com.google.firebase.firestore.FirebaseFirestore
 import com.sih.graminshikshasahyog.adapters.CourseAdapter
+import com.sih.graminshikshasahyog.adapters.GovtSchemesAdapter
+import com.sih.graminshikshasahyog.adapters.NGOSchemeAdapter
 import com.sih.graminshikshasahyog.databinding.FragmentGovtSchemesBinding
 import com.sih.graminshikshasahyog.model.GovtSchemes
 
 class GovtSchemesFragment : Fragment() {
 
     private lateinit var binding: FragmentGovtSchemesBinding
-    private lateinit var schemeAdapter: NGOSchemeAdapter
+    private lateinit var schemeAdapter: GovtSchemesAdapter
 
 
     override fun onCreateView(
@@ -47,7 +49,7 @@ class GovtSchemesFragment : Fragment() {
                         list.add(schemeModel)
                     }
                     Log.d("hell", list.toString())
-                    schemeAdapter = NGOSchemeAdapter(list)
+                    schemeAdapter = GovtSchemesAdapter(list)
                     binding.schemeRecyclerView.adapter = schemeAdapter
                     schemeAdapter.notifyDataSetChanged()
                 }

@@ -167,7 +167,8 @@ class StudentSignUpActivity : AppCompatActivity() {
             "gender" to gender,
             "dob" to dob,
             "looking for" to preference,
-            "profilePicture" to ""
+            "profilePicture" to "",
+            "userId" to auth.currentUser?.uid
         )
 
         GlobalScope.launch(Dispatchers.IO) {

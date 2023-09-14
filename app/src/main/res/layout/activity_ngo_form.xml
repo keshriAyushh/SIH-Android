@@ -3,464 +3,462 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ui.activities.NGO_form">
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <androidx.appcompat.widget.LinearLayoutCompat
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <androidx.cardview.widget.CardView
+        <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            app:cardBackgroundColor="@color/black">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-            <androidx.appcompat.widget.LinearLayoutCompat
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:layout_height="100dp"
+                app:cardBackgroundColor="@color/black">
 
                 <androidx.appcompat.widget.LinearLayoutCompat
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="18dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:letterSpacing="0.05"
-                        android:text="Rural"
-                        android:textColor="@color/white"
-                        android:textSize="25dp"
-
-                        android:textStyle="bold"
-
-                        />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:letterSpacing="0.05"
-                        android:text="Aid"
-                        android:textColor="@color/orange"
-                        android:textSize="25dp"
-
-                        android:textStyle="bold"
-
-                        />
-
-                </androidx.appcompat.widget.LinearLayoutCompat>
-
-                <androidx.appcompat.widget.LinearLayoutCompat
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="8dp"
-                    android:layout_weight="0.1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:orientation="horizontal">
 
-
-
-                    <ImageView
-                        android:id="@+id/notification_btn"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginLeft="20dp"
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
                         android:layout_marginTop="15dp"
-                        android:src="@drawable/notification" />
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:letterSpacing="0.05"
+                            android:text="Rural"
+                            android:textColor="@color/white"
+                            android:textSize="25dp"
+
+                            android:textStyle="bold"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:letterSpacing="0.05"
+                            android:text="Aid"
+                            android:textColor="@color/orange"
+                            android:textSize="25dp"
+
+                            android:textStyle="bold"
+
+                            />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="0.1"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:id="@+id/notification_btn"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/notification" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
 
-            </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.cardview.widget.CardView>
 
-
-        </androidx.cardview.widget.CardView>
-
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardCornerRadius="20dp"
-            android:layout_margin="10dp"
-            app:cardElevation="5dp"
-            >
-            <androidx.appcompat.widget.LinearLayoutCompat
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp">
 
                 <androidx.appcompat.widget.LinearLayoutCompat
-                    android:layout_width="260dp"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="match_parent"
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="260dp"
                         android:layout_height="wrap_content"
-                        android:text="Swades Foundation"
-                        android:layout_marginTop="14dp"
-                        android:layout_marginLeft="20dp"
-                        android:textSize="18dp"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"
-                        android:id="@+id/namescheme"/>
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Secondary School Scholarship"
+
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/namescheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="14dp"
+                            android:text="Swades Foundation"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/shortdescscheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Secondary School Scholarship"
+
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/schemedesc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:text="“ Since 2013, we have reached out to 2700 hamlets/villages across Raigad and Nashik district in Maharashtra. Our holistic development model covers all aspects of individual and community development through a unique ‘4E’ strategy: engage, empower, execute and exit. ”"
+
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp"
+                            android:text="About the Programme"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/aboutprogramme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="This programme is aimed to provide scholarship to 300 needy students all over the India for their 11th and 12th standard education."
+
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/scholarshipamount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="25dp"
+                            android:text="Scholarship - 10,000 per year"
+                            android:textColor="@color/orange"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="7dp"
+
                         android:layout_marginTop="10dp"
-                        android:layout_marginLeft="20dp"
-                        android:textSize="14dp"
+                        android:src="@mipmap/logo_foreground">
 
-                        android:textColor="@color/black"
-                        android:id="@+id/shortdescscheme"/>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="“ Since 2013, we have reached out to 2700 hamlets/villages across Raigad and Nashik district in Maharashtra. Our holistic development model covers all aspects of individual and community development through a unique ‘4E’ strategy: engage, empower, execute and exit. ”"
-                        android:layout_marginTop="15dp"
-                        android:layout_marginLeft="20dp"
-                        android:textSize="14dp"
-
-                        android:textColor="@color/black"
-                        android:id="@+id/schemedesc"/>
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="About the Programme"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginLeft="20dp"
-                        android:textSize="14dp"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"
-                        />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="This programme is aimed to provide scholarship to 300 needy students all over the India for their 11th and 12th standard education."
-                        android:layout_marginTop="10dp"
-                        android:layout_marginLeft="20dp"
-                        android:textSize="14dp"
-
-                        android:textColor="@color/black"
-                        android:id="@+id/aboutprogramme"
-                        />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="15dp"
-                        android:textStyle="bold"
-                        android:text="Scholarship - 10,000 per year"
-                        android:layout_marginLeft="20dp"
-                        android:textSize="14dp"
-                        android:layout_marginBottom="25dp"
-                        android:textColor="@color/orange"
-                        android:id="@+id/scholarshipamount"
-                        />
+                    </com.google.android.material.imageview.ShapeableImageView>
 
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
-                <com.google.android.material.imageview.ShapeableImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_marginTop="10dp"
+            </com.google.android.material.card.MaterialCardView>
 
-                    android:layout_marginLeft="7dp"
-                    android:src="@mipmap/logo_foreground"
-                    >
-
-                </com.google.android.material.imageview.ShapeableImageView>
-
-
-            </androidx.appcompat.widget.LinearLayoutCompat>
-
-        </com.google.android.material.card.MaterialCardView>
-
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardCornerRadius="20dp"
-            android:layout_marginHorizontal="10dp"
-            android:layout_marginBottom="10dp"
-            app:cardElevation="5dp">
-
-            <androidx.appcompat.widget.LinearLayoutCompat
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <TextView
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Requirements"
-                    android:textSize="17dp"
-                    android:textStyle="bold"
-                    android:layout_margin="15dp"/>
+                    android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="1. Passed 10th class with at least 50% marks.\n2. Must be of age less than 21."
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginBottom="20dp"
-                    />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:text="Requirements"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
 
-
-            </androidx.appcompat.widget.LinearLayoutCompat>
-
-
-
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="1. Passed 10th class with at least 50% marks.\n2. Must be of age less than 21." />
 
 
+                </androidx.appcompat.widget.LinearLayoutCompat>
 
-        </com.google.android.material.card.MaterialCardView>
 
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardCornerRadius="20dp"
-            android:layout_marginHorizontal="10dp"
-            app:cardElevation="5dp">
+            </com.google.android.material.card.MaterialCardView>
 
-            <androidx.appcompat.widget.LinearLayoutCompat
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_marginHorizontal="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp">
 
-                <TextView
+                <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Application Form"
-                    android:textSize="20dp"
-                    android:textStyle="bold"
-                    android:layout_margin="15dp"/>
+                    android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Please check the requirements before filling the form. Applications not fulfilling the criterias will get rejected."
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginBottom="20dp"
-                    android:textColor="#B31B1B"
-                    />
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/etNameLayout"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="6dp"
-                    android:layout_marginBottom="7dp"
-                    android:hint="Name"
-                    app:boxCornerRadiusBottomEnd="10dp"
-                    app:boxCornerRadiusBottomStart="10dp"
-                    app:boxCornerRadiusTopEnd="10dp"
-                    app:boxCornerRadiusTopStart="10dp"
-                    app:boxStrokeColor="@color/green"
-                    app:hintEnabled="true"
-                    app:hintTextColor="@color/green"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginEnd="15dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/tvText4">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/etName"
+                    <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:inputType="textPersonName"
-                        android:textColor="@color/black"
-                        android:textSize="14sp" />
-                </com.google.android.material.textfield.TextInputLayout>
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:text="Application Form"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
 
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/etLocationLayout"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="6dp"
-                    android:layout_marginBottom="7dp"
-                    android:hint="Village/Area"
-                    app:boxCornerRadiusBottomEnd="10dp"
-                    app:boxCornerRadiusBottomStart="10dp"
-                    app:boxCornerRadiusTopEnd="10dp"
-                    app:boxCornerRadiusTopStart="10dp"
-                    app:boxStrokeColor="@color/green"
-                    app:hintEnabled="true"
-                    app:hintTextColor="@color/green"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginEnd="15dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/tvText4">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="Please check the requirements before filling the form. Applications not fulfilling the criterias will get rejected."
+                        android:textColor="#B31B1B" />
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/etLocation"
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/etNameLayout"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:inputType="textPersonName"
-                        android:textColor="@color/black"
-                        android:textSize="14sp" />
-                </com.google.android.material.textfield.TextInputLayout>
-  <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/etPhoneNumberLayout"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="6dp"
-                    android:layout_marginBottom="7dp"
-                    android:hint="Phone Number"
-                    app:boxCornerRadiusBottomEnd="10dp"
-                    app:boxCornerRadiusBottomStart="10dp"
-                    app:boxCornerRadiusTopEnd="10dp"
-                    app:boxCornerRadiusTopStart="10dp"
-                    app:boxStrokeColor="@color/green"
-                    app:hintEnabled="true"
-                    app:hintTextColor="@color/green"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginEnd="15dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/tvText4">
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="7dp"
+                        android:hint="Name"
+                        app:boxCornerRadiusBottomEnd="10dp"
+                        app:boxCornerRadiusBottomStart="10dp"
+                        app:boxCornerRadiusTopEnd="10dp"
+                        app:boxCornerRadiusTopStart="10dp"
+                        app:boxStrokeColor="@color/green"
+                        app:hintEnabled="true"
+                        app:hintTextColor="@color/green"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvText4">
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/etPhoneNumber"
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etName"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="textPersonName"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/etLocationLayout"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:inputType="textPersonName"
-                        android:textColor="@color/black"
-                        android:textSize="14sp" />
-                </com.google.android.material.textfield.TextInputLayout>
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="7dp"
+                        android:hint="Village/Area"
+                        app:boxCornerRadiusBottomEnd="10dp"
+                        app:boxCornerRadiusBottomStart="10dp"
+                        app:boxCornerRadiusTopEnd="10dp"
+                        app:boxCornerRadiusTopStart="10dp"
+                        app:boxStrokeColor="@color/green"
+                        app:hintEnabled="true"
+                        app:hintTextColor="@color/green"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvText4">
 
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/etQualificationLayout"
-                    style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etLocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="textPersonName"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
 
-                    app:boxBackgroundColor="@color/white"
-                    app:boxCornerRadiusBottomEnd="10dp"
-                    app:boxCornerRadiusBottomStart="10dp"
-                    app:boxCornerRadiusTopEnd="10dp"
-                    app:boxCornerRadiusTopStart="10dp"
-                    app:boxStrokeColor="@color/green"
-                    app:endIconMode="dropdown_menu"
-                    app:hintEnabled="true"
-                    app:hintTextColor="@color/green"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginEnd="15dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/etPasswordLayout"
-                    tools:layout_editor_absoluteY="574dp">
-
-                    <AutoCompleteTextView
-                        android:id="@+id/etQualification"
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/etPhoneNumberLayout"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:hint="Qualification"
-                        android:inputType="none"
-                        android:padding="10dp"
-                        android:textColor="@color/black"
-                        android:textSize="14sp"
-                        app:simpleItems="@array/qualifications" />
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="7dp"
+                        android:hint="Phone Number"
+                        app:boxCornerRadiusBottomEnd="10dp"
+                        app:boxCornerRadiusBottomStart="10dp"
+                        app:boxCornerRadiusTopEnd="10dp"
+                        app:boxCornerRadiusTopStart="10dp"
+                        app:boxStrokeColor="@color/green"
+                        app:hintEnabled="true"
+                        app:hintTextColor="@color/green"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvText4">
 
-                </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etPhoneNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="textPersonName"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
 
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/etGenderLayout"
-                    style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    app:boxBackgroundColor="@color/white"
-                    app:boxCornerRadiusBottomEnd="10dp"
-                    app:boxCornerRadiusBottomStart="10dp"
-                    app:boxCornerRadiusTopEnd="10dp"
-                    app:boxCornerRadiusTopStart="10dp"
-                    app:boxStrokeColor="@color/green"
-                    app:endIconMode="dropdown_menu"
-                    android:layout_marginStart="15dp"
-                    app:hintEnabled="true"
-                    app:hintTextColor="@color/green"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/etQualificationLayout"
-                    tools:layout_editor_absoluteY="428dp">
-
-                    <AutoCompleteTextView
-                        android:id="@+id/etGender"
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/etQualificationLayout"
+                        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:hint="Gender"
-                        android:inputType="none"
-                        android:padding="10dp"
-                        android:textColor="@color/black"
-                        android:textSize="14sp"
-                        app:simpleItems="@array/genders" />
-                </com.google.android.material.textfield.TextInputLayout>
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
 
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/etDOBLayout"
-                    style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="20dp"
-                    android:hint="D/O/B"
-                    app:boxBackgroundColor="@color/white"
-                    app:boxCornerRadiusBottomEnd="10dp"
-                    app:boxCornerRadiusBottomStart="10dp"
-                    app:boxCornerRadiusTopEnd="10dp"
-                    app:boxCornerRadiusTopStart="10dp"
-                    app:boxStrokeColor="@color/green"
-                    app:endIconDrawable="@drawable/calendar"
-                    app:endIconMode="custom"
-                    app:endIconTint="@color/black"
-                    app:hintEnabled="true"
-                    app:hintTextColor="@color/green"
-                    android:layout_marginStart="15dp"
-                    app:layout_constraintEnd_toEndOf="@+id/etGenderLayout"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/etGenderLayout"
-                    tools:layout_editor_absoluteY="501dp">
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        app:boxBackgroundColor="@color/white"
+                        app:boxCornerRadiusBottomEnd="10dp"
+                        app:boxCornerRadiusBottomStart="10dp"
+                        app:boxCornerRadiusTopEnd="10dp"
+                        app:boxCornerRadiusTopStart="10dp"
+                        app:boxStrokeColor="@color/green"
+                        app:endIconMode="dropdown_menu"
+                        app:hintEnabled="true"
+                        app:hintTextColor="@color/green"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/etPasswordLayout"
+                        tools:layout_editor_absoluteY="574dp">
 
-                    <AutoCompleteTextView
-                        android:id="@+id/etDOB"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:inputType="none"
-                        android:padding="10dp"
-                        android:textColor="@color/black"
-                        android:textSize="14sp" />
-                </com.google.android.material.textfield.TextInputLayout>
+                        <AutoCompleteTextView
+                            android:id="@+id/etQualification"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Qualification"
+                            android:inputType="none"
+                            android:padding="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            app:simpleItems="@array/qualifications" />
 
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnSignUp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Apply"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="20dp"
-                    app:cornerRadius="10dp"
-                    android:textColor="@color/white"
-                    android:backgroundTint="@color/green"
-                    app:layout_constraintTop_toBottomOf="@id/view1"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    android:layout_marginTop="10dp"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/etGenderLayout"
+                        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        app:boxBackgroundColor="@color/white"
+                        app:boxCornerRadiusBottomEnd="10dp"
+                        app:boxCornerRadiusBottomStart="10dp"
+                        app:boxCornerRadiusTopEnd="10dp"
+                        app:boxCornerRadiusTopStart="10dp"
+                        app:boxStrokeColor="@color/green"
+                        app:endIconMode="dropdown_menu"
+                        app:hintEnabled="true"
+                        app:hintTextColor="@color/green"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/etQualificationLayout"
+                        tools:layout_editor_absoluteY="428dp">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/etGender"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Gender"
+                            android:inputType="none"
+                            android:padding="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            app:simpleItems="@array/genders" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/etDOBLayout"
+                        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:hint="D/O/B"
+                        app:boxBackgroundColor="@color/white"
+                        app:boxCornerRadiusBottomEnd="10dp"
+                        app:boxCornerRadiusBottomStart="10dp"
+                        app:boxCornerRadiusTopEnd="10dp"
+                        app:boxCornerRadiusTopStart="10dp"
+                        app:boxStrokeColor="@color/green"
+                        app:endIconDrawable="@drawable/calendar"
+                        app:endIconMode="custom"
+                        app:endIconTint="@color/black"
+                        app:hintEnabled="true"
+                        app:hintTextColor="@color/green"
+                        app:layout_constraintEnd_toEndOf="@+id/etGenderLayout"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/etGenderLayout"
+                        tools:layout_editor_absoluteY="501dp">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/etDOB"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="none"
+                            android:padding="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnSignUp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:backgroundTint="@color/green"
+                        android:text="Apply"
+                        android:textColor="@color/white"
+                        app:cornerRadius="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/view1" />
 
 
-            </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.appcompat.widget.LinearLayoutCompat>
 
-        </com.google.android.material.card.MaterialCardView>
+            </com.google.android.material.card.MaterialCardView>
 
-    </androidx.appcompat.widget.LinearLayoutCompat>
-</ScrollView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
 
 
 </androidx.appcompat.widget.LinearLayoutCompat>

@@ -7,9 +7,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.bumptech.glide.Glide
+import com.bumptech.glide.load.resource.bitmap.FitCenter
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners
+import com.bumptech.glide.request.RequestOptions
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.CollectionReference
 import com.google.firebase.firestore.FirebaseFirestore
+import com.sih.graminshikshasahyog.R
 import com.sih.graminshikshasahyog.databinding.FragmentAccountBinding
 import com.sih.graminshikshasahyog.ui.activities.SignInActivity
 import kotlinx.coroutines.Dispatchers
@@ -27,24 +32,36 @@ class AccountFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-
-
         binding = FragmentAccountBinding.inflate(layoutInflater)
 
         auth = FirebaseAuth.getInstance()
         firestore = FirebaseFirestore.getInstance()
 
-        var student : MutableMap<String,Any> = getStudentDetails()
-        Log.d("account2",student.toString())
+//        val student: MutableMap<String, Any> = getStudentDetails()
 
-        binding.tvName.setText(student.get("name").toString())
-        binding.tvDOBValue.text = student.get("dob").toString()
-        binding.tvPhoneValue.text = student.get("phone").toString()
-        binding.tvGenderValue.text = student.get("gender").toString()
+        val collectionref: CollectionReference = firestore.collection("studentuserDB")
+        val documentref = collectionref.document(auth.currentUser?.uid!!)
 
-//        if(student.email.isNotEmpty()) {
-//            binding.block3.visibility = View.GONE
-//        }
+        documentref.get()
+            .addOnSuccessListener {
+                if(it.exists()) {
+                    Log.d("data", it.data?.get("name").toString())
+                    binding.tvName.text = it.data?.get("name")?.toString() ?: "null"
+                    binding.tvGenderValue.text = it.data?.get("gender")?.toString() ?: "null"
+                    binding.tvPhoneValue.text = it.data?.get("phone")?.toString()?.subSequence(3, 13) ?: "null"
+                    binding.tvDOBValue.text = it.data?.get("dob")?.toString() ?: "null"
+
+
+                    Glide.with(binding.profilePicture.context)
+                        .load(it.data?.get("profilePicture").toString())
+                        .placeholder(R.drawable.user)
+                        .skipMemoryCache(false)//for caching the image url in case phone is offline
+                        .into(binding.profilePicture)
+                }
+            }
+            .addOnFailureListener {
+
+            }
 
         binding.btnSignOut.setOnClickListener {
             auth.signOut()
@@ -52,36 +69,29 @@ class AccountFragment : Fragment() {
             activity?.finish()
         }
 
-
         return binding.root
     }
 
-
-
-    private fun currentUser() : String {
+    private fun currentUser(): String {
         auth = FirebaseAuth.getInstance()
-        val user  = auth.currentUser
-        if (user != null) {
-            return user.uid
-        }
-        else return "null"
+        val user = auth.currentUser
+        return user?.uid ?: "null"
     }
 
-    private fun getStudentDetails(): MutableMap<String,Any> {
+    private fun getStudentDetails(): MutableMap<String, Any> {
         //TODO: Fetch user details here and return it to display its details
-        val userid = currentUser()
-        var data:MutableMap<String, Any> = mutableMapOf<String, Any>()
+        val userid = auth.currentUser?.uid!!
+        var data: MutableMap<String, Any> = mutableMapOf<String, Any>()
         val firestore: FirebaseFirestore = FirebaseFirestore.getInstance()
-        val collectionref : CollectionReference = firestore.collection("studentuserDB")
+        val collectionref: CollectionReference = firestore.collection("studentuserDB")
         val documentref = collectionref.document(userid)
 
-        GlobalScope.launch(Dispatchers.IO) {
-            documentref.get().addOnCompleteListener { task ->
-                val document = task.result
 
-                if(document.exists()){
-                    data = document.data!!
-                }
+
+        documentref.get().addOnCompleteListener { task ->
+            val document = task.result
+            if (document.exists()) {
+                data = document.data!!
             }
         }
 

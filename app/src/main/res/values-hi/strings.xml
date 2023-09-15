@@ -40,6 +40,15 @@
     <string name="skill_grade">आपके कौशल का ग्रेड</string>
     <string name="positive_feedback_text">आप अद्भुत कर रहे हैं!</string>
     <string name="motivational_feedback_text">आप बेहतर कर सकते हैं!</string>
+    <string name="your_communities">आपके समुदाय</string>
+    <string name="stats">आँकड़े</string>
+    <string name="create_community">एक नया समुदाय बनाएँ</string>
+    <string name="enrollment_count">नामांकन संख्या</string>
+    <string name="enrollment_statistics">नामांकन सांख्यिकी</string>
+    <string name="total_enrollment">कुल नामांकन:</string>
+    <string name="weekly">पिछले सप्ताह:</string>
+    <string name="monthly">पिछला महीना:</string>
+    <string name="enrollments">नामांकन</string>
     <string name="negatice_feedback_text">आपका प्रदर्शन अच्छा नहीं रहा!</string>
     <string name="courses_enrolled">नामांकित पाठ्यक्रम:</string>
     <string name="courses_completed">"पूर्ण किये गये पाठ्यक्रम: "</string>
@@ -53,5 +62,12 @@
     <string name="learn">सीखो</string>
     <string name="dashboard">डैशबोर्ड</string>
     <string name="add_post">नई पोस्ट</string>
+    <string name="as_a_student">विद्यार्थी</string>
+    <string name="as_a_mentor">उपदेशक</string>
+    <string name="mobile_or_email">मोबाइल नंबर/ईमेल आईडी</string>
+    <string name="create_student_account">क्या आप यहां नए आये हैं? एक छात्र खाता बनाएँ</string>
+    <string name="create_mentor_account">गुरु बनें!</string>
+    <string name="forgot_helper">अपना पासवर्ड रीसेट करने के लिए ईमेल प्राप्त करने के लिए नीचे अपना ईमेल दर्ज करें</string>
+    <string name="send">" भेजें"</string>
 
 </resources>

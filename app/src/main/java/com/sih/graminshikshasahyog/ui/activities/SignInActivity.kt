@@ -71,4 +71,5 @@ class SignInActivity : AppCompatActivity() {
     private fun createTabs(tabLayout: TabLayout, text: String) {
         tabLayout.addTab(tabLayout.newTab().setText(text))
     }
+
 }

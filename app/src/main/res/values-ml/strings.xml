@@ -40,6 +40,15 @@
     <string name="skill_grade">നിങ്ങളുടെ നൈപുണ്യ ഗ്രേഡ്</string>
     <string name="positive_feedback_text">നിങ്ങൾ അത്ഭുതകരമായി പ്രവർത്തിക്കുന്നു!</string>
     <string name="motivational_feedback_text">നിങ്ങൾക്ക് നന്നായി ചെയ്യാൻ കഴിയും!</string>
+    <string name="your_communities">നിങ്ങളുടെ കമ്മ്യൂണിറ്റികൾ</string>
+    <string name="stats">സ്ഥിതിവിവരക്കണക്കുകൾ</string>
+    <string name="create_community">ഒരു പുതിയ കമ്മ്യൂണിറ്റി സൃഷ്ടിക്കുക</string>
+    <string name="enrollment_count">എൻറോൾമെന്റ് എണ്ണം</string>
+    <string name="enrollment_statistics">എൻറോൾമെന്റ് സ്ഥിതിവിവരക്കണക്കുകൾ</string>
+    <string name="total_enrollment">ആകെ എൻറോൾമെന്റ്:</string>
+    <string name="weekly">കഴിഞ്ഞ ആഴ്ച:</string>
+    <string name="monthly">കഴിഞ്ഞ മാസം:</string>
+    <string name="enrollments">എൻറോൾമെന്റുകൾ</string>
     <string name="negatice_feedback_text">നിങ്ങളുടെ പ്രകടനം മാർക്കിൽ എത്തിയിട്ടില്ല!</string>
     <string name="courses_enrolled">എൻറോൾ ചെയ്ത കോഴ്സുകൾ:</string>
     <string name="courses_completed">"പൂർത്തിയാക്കിയ കോഴ്സുകൾ: "</string>
@@ -53,4 +62,11 @@
     <string name="learn">പഠിക്കുക</string>
     <string name="dashboard">ഡാഷ്ബോർഡ്</string>
     <string name="add_post">പുതിയ പോസ്റ്റ്</string>
+    <string name="as_a_student">വിദ്യാർത്ഥി</string>
+    <string name="as_a_mentor">ഉപദേഷ്ടാവ്</string>
+    <string name="mobile_or_email">മൊബൈൽ നമ്പർ / ഇമെയിൽ ഐഡി</string>
+    <string name="create_student_account">നിങ്ങൾ ഇവിടെ ആദ്യമായിടാണോ? ഒരു വിദ്യാർത്ഥി അക്കൗണ്ട് സൃഷ്ടിക്കുക</string>
+    <string name="create_mentor_account">ഒരു ഉപദേശകനാകൂ!</string>
+    <string name="forgot_helper">നിങ്ങളുടെ പാസ്‌വേഡ് പുനഃസജ്ജമാക്കുന്നതിന് ഒരു ഇമെയിൽ ലഭിക്കുന്നതിന് ചുവടെ നിങ്ങളുടെ ഇമെയിൽ നൽകുക</string>
+    <string name="send">അയയ്ക്കുക</string>
 </resources>

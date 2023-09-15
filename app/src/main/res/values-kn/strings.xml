@@ -40,6 +40,15 @@
     <string name="skill_grade">ನಿಮ್ಮ ಕೌಶಲ್ಯ ದರ್ಜೆ</string>
     <string name="positive_feedback_text">ನೀವು ಅದ್ಭುತ ಮಾಡುತ್ತಿದ್ದೀರಿ!</string>
     <string name="motivational_feedback_text">ನೀವು ಉತ್ತಮವಾಗಿ ಮಾಡಬಹುದು!</string>
+    <string name="your_communities">ನಿಮ್ಮ ಸಮುದಾಯಗಳು</string>
+    <string name="stats">ಅಂಕಿಅಂಶಗಳು</string>
+    <string name="create_community">ಹೊಸ ಸಮುದಾಯವನ್ನು ರಚಿಸಿ</string>
+    <string name="enrollment_count">ದಾಖಲಾತಿ ಎಣಿಕೆ</string>
+    <string name="enrollment_statistics">ದಾಖಲಾತಿ ಅಂಕಿಅಂಶಗಳು</string>
+    <string name="total_enrollment">ಒಟ್ಟು ದಾಖಲಾತಿ:</string>
+    <string name="weekly">ಕಳೆದ ವಾರ:</string>
+    <string name="monthly">ಕಳೆದ ತಿಂಗಳು:</string>
+    <string name="enrollments">ದಾಖಲಾತಿಗಳು</string>
     <string name="negatice_feedback_text">ನಿಮ್ಮ ಕಾರ್ಯಕ್ಷಮತೆಯು ಮಾರ್ಕ್ ಅನ್ನು ತಲುಪಿಲ್ಲ!</string>
     <string name="courses_enrolled">ದಾಖಲಾದ ಕೋರ್ಸ್‌ಗಳು:</string>
     <string name="courses_completed">"ಪೂರ್ಣಗೊಳಿಸಿದ ಕೋರ್ಸ್‌ಗಳು: "</string>
@@ -53,6 +62,13 @@
     <string name="learn">ಕಲಿಯಿರಿ</string>
     <string name="dashboard">ಡ್ಯಾಶ್‌ಬೋರ್ಡ್</string>
     <string name="add_post">ಹೊಸ ಪೋಸ್ಟ್‌</string>
+    <string name="as_a_student">ವಿದ್ಯಾರ್ಥಿ</string>
+    <string name="as_a_mentor">ಮಾರ್ಗದರ್ಶಕ</string>
+    <string name="mobile_or_email">ಮೊಬೈಲ್ ಸಂಖ್ಯೆ/ಇಮೇಲ್ ಐಡಿ</string>
+    <string name="create_student_account">ನೀವು ಇಲ್ಲಿಗೆ ಹೊಸಬರೇ? ವಿದ್ಯಾರ್ಥಿ ಖಾತೆಯನ್ನು ರಚಿಸಿ</string>
+    <string name="create_mentor_account">ಮಾರ್ಗದರ್ಶಕರಾಗಿ!</string>
+    <string name="forgot_helper">ನಿಮ್ಮ ಪಾಸ್‌ವರ್ಡ್ ಅನ್ನು ಮರುಹೊಂದಿಸಲು ಇಮೇಲ್ ಸ್ವೀಕರಿಸಲು ನಿಮ್ಮ ಇಮೇಲ್ ಅನ್ನು ಕೆಳಗೆ ನಮೂದಿಸಿ</string>
+    <string name="send">ಕಳುಹಿಸು</string>
 
 
 </resources>

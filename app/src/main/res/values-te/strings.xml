@@ -40,6 +40,15 @@
     <string name="skill_grade">మీ నైపుణ్యం స్థాయి</string>
     <string name="positive_feedback_text">మీరు అద్భుతంగా చేస్తున్నారు!</string>
     <string name="motivational_feedback_text">నువ్వు ఇంతకన్నా బాగా చేయగలవు!</string>
+    <string name="your_communities">మీ సంఘాలు</string>
+    <string name="stats">గణాంకాలు</string>
+    <string name="create_community">కొత్త సంఘాన్ని సృష్టించండి</string>
+    <string name="enrollment_count">నమోదు గణన</string>
+    <string name="enrollment_statistics">నమోదు గణాంకాలు</string>
+    <string name="total_enrollment">మొత్తం నమోదు:</string>
+    <string name="weekly">గత వారం:</string>
+    <string name="monthly">పోయిన నెల:</string>
+    <string name="enrollments">నమోదులు</string>
     <string name="negatice_feedback_text">మీ పనితీరు మార్కుకు చేరుకోలేదు!</string>
     <string name="courses_enrolled">నమోదు చేసుకున్న కోర్సులు:</string>
     <string name="courses_completed">"పూర్తి చేసిన కోర్సులు: "</string>
@@ -53,4 +62,11 @@
     <string name="learn">నేర్చుకో</string>
     <string name="dashboard">డాష్బోర్డ్</string>
     <string name="add_post">కొత్త పోస్ట్</string>
+    <string name="as_a_student">విద్యార్థి</string>
+    <string name="as_a_mentor">గురువు</string>
+    <string name="mobile_or_email">మొబైల్ నంబర్/ఇమెయిల్ ఐడి</string>
+    <string name="create_student_account">మీరు ఇక్కడ కొత్తవా? విద్యార్థి ఖాతాను సృష్టించండి</string>
+    <string name="create_mentor_account">మెంటార్ అవ్వండి!</string>
+    <string name="forgot_helper">మీ పాస్‌వర్డ్‌ని రీసెట్ చేయడానికి ఇమెయిల్‌ను స్వీకరించడానికి దిగువన మీ ఇమెయిల్‌ని నమోదు చేయండి</string>
+    <string name="send">పంపండి</string>
 </resources>

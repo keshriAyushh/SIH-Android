@@ -51,7 +51,7 @@
     <string name="forgot_password">Forgot Password?</string>
     <string name="mobilno_email">Mobile No./Email ID</string>
     <string name="new_here">New here?Create an account</string>
-    <string name="full_name">Name</string>
+    <string name="name">Name</string>
     <string name="email">Email</string>
     <string name="qualification">Qualification</string>
     <string name="jobs">Jobs</string>
@@ -110,4 +110,11 @@
     <string name="programme">Programme</string>
     <string name="choose_community">Choose community</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mentor_posts">Mentor Posts</string>
+    <string name="community">Community</string>
+    <string name="thanks">Thank you</string>
+    <string name="reply">Reply</string>
+    <string name="delete">Delete</string>
 </resources>

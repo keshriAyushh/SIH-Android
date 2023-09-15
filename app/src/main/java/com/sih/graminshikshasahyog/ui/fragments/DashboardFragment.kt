@@ -12,10 +12,7 @@ import com.sih.graminshikshasahyog.adapters.ViewPagerAdapter1
 import com.sih.graminshikshasahyog.adapters.ViewPagerAdapter4
 import com.sih.graminshikshasahyog.databinding.FragmentDashboardBinding
 
-public class DashboardFragment(
-    private val text1: String,
-    private val text2: String
-) : Fragment() {
+class DashboardFragment: Fragment() {
 
 
     public lateinit var binding: FragmentDashboardBinding
@@ -29,8 +26,8 @@ public class DashboardFragment(
         val viewPager = binding.viewPager
 
         val adapter = ViewPagerAdapter4(activity?.supportFragmentManager!!, lifecycle)
-        createTabs(tabLayout, text1)
-        createTabs(tabLayout, text2)
+        createTabs(tabLayout, "Your communities")
+        createTabs(tabLayout, "Stats")
         viewPager.adapter = adapter
 
         tabLayout.addOnTabSelectedListener(

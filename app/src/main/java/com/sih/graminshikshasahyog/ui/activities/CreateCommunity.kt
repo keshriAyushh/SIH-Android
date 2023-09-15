@@ -38,12 +38,12 @@ class CreateCommunity : AppCompatActivity() {
         val firestoredb = FirebaseFirestore.getInstance()
         val collectionReference = firestoredb.collection("comunitydetailsDB")
         val auth = FirebaseAuth.getInstance()
-        val user = auth.currentUser
+        val user = auth.currentUser?.displayName
         lateinit var userId:String
-        lateinit var userName : String
+        var userName: String? = null
         if (user != null) {
 
-             userId = user.uid
+             userId = auth.currentUser?.uid!!
 
         } else {
             Toast.makeText(this, "Error user",Toast.LENGTH_SHORT).show()
@@ -59,12 +59,11 @@ class CreateCommunity : AppCompatActivity() {
 
 
         val data = hashMapOf(
-            "communityname" to binding.etCommunityName.text,
-            "visibility" to binding.etVisibility.text,
-            "creator" to user,
-            "bio" to binding.etBio.text,
-            "shortdescription" to binding.etShortDescription.text,
-            "links" to arrayListOf("")
+            "communityname" to binding.etCommunityName.text.toString(),
+            "visibility" to binding.etVisibility.text.toString(),
+            "creator" to userName,
+            "bio" to binding.etBio.text.toString(),
+            "shortdescription" to binding.etShortDescription.text.toString(),
         )
         collectionReference.document(binding.etToken.text.toString()).set(data)
             .addOnSuccessListener {
@@ -80,14 +79,11 @@ class CreateCommunity : AppCompatActivity() {
         mentorDocument.collection(binding.etCommunityName.text.toString()).add(data)
             .addOnSuccessListener {
                 Toast.makeText(this, "Added in mentorDB",Toast.LENGTH_SHORT).show()
+                finish()
             }
             .addOnFailureListener{
                 Toast.makeText(this, "Failed to add mentorDB",Toast.LENGTH_SHORT).show()
             }
 
-
     }
-
-
-
 }

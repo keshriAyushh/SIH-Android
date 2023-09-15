@@ -25,7 +25,7 @@ class MentorAccountFragment : Fragment() {
 
         binding.btnMentorSignOut.setOnClickListener {
             auth.signOut()
-            startActivity(Intent(requireContext(), SignInActivity::class.java))
+            activity?.startActivity(Intent(requireContext(), SignInActivity::class.java))
             activity?.finish()
         }
 

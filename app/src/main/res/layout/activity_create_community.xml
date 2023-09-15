@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/white"
     tools:context=".ui.activities.CreateCommunity">
     <FrameLayout
         android:id="@+id/flAction"
@@ -187,7 +188,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/etShortDescriptionLayout"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:hint="Short Description"
         app:boxCornerRadiusBottomEnd="10dp"
@@ -207,7 +208,7 @@
             android:id="@+id/etShortDescription"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:inputType="textPersonName"
+            android:inputType="textMultiLine"
             android:textColor="@color/black"
             android:textSize="14sp" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -217,6 +218,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/createcommbtn"
         android:text="Create Community"
+        android:textColor="@color/white"
         android:backgroundTint="@color/green"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"/>

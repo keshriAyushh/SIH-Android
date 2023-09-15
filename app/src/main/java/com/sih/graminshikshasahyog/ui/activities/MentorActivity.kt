@@ -22,13 +22,13 @@ class MentorActivity : AppCompatActivity() {
         binding = ActivityMentorBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setFragment(DashboardFragment(getString(R.string.your_communities), getString(R.string.stats)))
+        setFragment(DashboardFragment())
 
         binding.bottomNav.setOnItemSelectedListener {
             //Replacing the fragments depending upon the item clicked
             when(it) {
                 R.id.dashboard -> {
-                    setFragment(DashboardFragment(getString(R.string.your_communities), getString(R.string.stats)))
+                    setFragment(DashboardFragment())
                 }
                 R.id.mentorAccount -> {
                     setFragment(MentorAccountFragment())
@@ -37,7 +37,7 @@ class MentorActivity : AppCompatActivity() {
                     setFragment(AddPostFragment())
                 }
                 else -> {
-                    setFragment(DashboardFragment(getString(R.string.your_communities), getString(R.string.stats)))
+                    setFragment(DashboardFragment())
                 }
             }
             true
@@ -48,6 +48,6 @@ class MentorActivity : AppCompatActivity() {
         val fragmentManager = supportFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()
         fragmentTransaction.replace(binding.flFragment.id, fragment)
-        fragmentTransaction.commit()
+        fragmentTransaction.commitNow()
     }
 }

@@ -51,4 +51,6 @@
     <string name="govt_schemes">സർക്കാർ പദ്ധതികൾ</string>
     <string name="ngo_schemes">എൻജിഒ സ്കീമുകൾ</string>
     <string name="learn">പഠിക്കുക</string>
+    <string name="dashboard">ഡാഷ്ബോർഡ്</string>
+    <string name="add_post">പുതിയ പോസ്റ്റ്</string>
 </resources>

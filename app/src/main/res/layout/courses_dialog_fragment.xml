@@ -5,23 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     app:cardCornerRadius="20dp"
-
     android:layout_gravity="center"
     android:orientation="vertical">
 
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
-        android:layout_height="600dp"
+        android:layout_height="wrap_content"
         android:layout_margin="10dp"
         app:cardBackgroundColor="#EAEAEA"
-
         app:cardCornerRadius="20dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:background="#EAEAEA"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="#EAEAEA">
 
             <TextView
                 android:id="@+id/coursename"
@@ -29,8 +27,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
-                android:text="Computer Course for Real Youth"
+                android:text="Computer Course for Rural Youth"
                 android:textSize="18dp"
+                android:textColor="@color/black"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -38,104 +37,88 @@
                 android:id="@+id/level"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
                 android:text="Beginner to Youth Level"
-
+                android:textColor="@color/black"
                 android:textSize="14dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.078"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.106" />
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="@+id/coursename"
+                app:layout_constraintTop_toBottomOf="@+id/coursename" />
 
             <TextView
                 android:id="@+id/author"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-                android:text="Created on 16th July, 2023"
-
+                android:text="Created by Dr. Prakash"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
                 android:textSize="14dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/shapeableImageView3"
-                app:layout_constraintHorizontal_bias="0.22"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.165" />
+                app:layout_constraintStart_toStartOf="@+id/level"
+                app:layout_constraintTop_toBottomOf="@+id/level" />
 
             <TextView
                 android:id="@+id/createdon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
                 android:text="Created on 16th July, 2023"
-
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
                 android:textSize="14dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/shapeableImageView3"
-                app:layout_constraintHorizontal_bias="0.22"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.216" />
+                app:layout_constraintStart_toStartOf="@+id/author"
+                app:layout_constraintTop_toBottomOf="@+id/author" />
 
             <TextView
 
                 android:id="@+id/textView6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-
-                android:text="Description"
+                android:text="Description:"
+                android:textColor="@color/black"
                 android:textSize="15dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.057"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.294" />
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="@+id/createdon"
+                app:layout_constraintTop_toBottomOf="@+id/createdon" />
 
             <TextView
-
                 android:id="@+id/desc"
-                android:layout_width="250dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:lineSpacingExtra="4dp"
-                android:layout_marginRight="30dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:ems="25"
+                android:lineSpacingExtra="2dp"
+                android:layout_marginTop="20dp"
                 android:text="This beginner-level computer course, offered by Smile Foundation, is designed to empower rural youth with essential digital skills. Participants will learn the basics of computer operation, including using the keyboard and mouse, navigating the desktop, and understanding file management."
-                android:textSize="13dp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:textColor="@color/black"
+                android:textSize="12dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.155"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.48" />
+                app:layout_constraintTop_toBottomOf="@+id/shapeableImageView3" />
 
             <TextView
 
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:layout_marginTop="20dp"
                 android:text="Skills you will be adding"
                 android:textSize="15dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.081"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.713" />
+                android:textColor="@color/black"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="@+id/desc"
+                app:layout_constraintTop_toBottomOf="@+id/desc" />
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
                 app:cardCornerRadius="10dp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="25dp"
+                app:cardBackgroundColor="@color/white"
+                app:layout_constraintEnd_toStartOf="@+id/cardView5"
+                app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.824">
+                app:layout_constraintTop_toBottomOf="@+id/textView">
 
                 <TextView
 
@@ -144,7 +127,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
                     android:text="Computer Skills"
-
+                    android:textColor="@color/black"
                     android:textSize="12dp"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="351dp" />
@@ -152,15 +135,16 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cardView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="10dp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:cardBackgroundColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView3"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.598"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.824">
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/cardView3"
+                app:layout_constraintTop_toTopOf="@+id/cardView3">
 
                 <TextView
 
@@ -169,7 +153,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
                     android:text="File Management"
-
+                    android:textColor="@color/black"
                     android:textSize="12dp"
                     tools:layout_editor_absoluteX="16dp"
                     tools:layout_editor_absoluteY="351dp" />
@@ -194,12 +178,13 @@
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:text="Enroll"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/green"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.501"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.964" />
+                app:layout_constraintTop_toBottomOf="@+id/cardView3" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

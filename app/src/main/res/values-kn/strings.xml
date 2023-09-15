@@ -51,6 +51,8 @@
     <string name="govt_schemes">ಸರಕಾರ ಯೋಜನೆಗಳು</string>
     <string name="ngo_schemes">ಎನ್‌ಜಿಒ ಯೋಜನೆಗಳು</string>
     <string name="learn">ಕಲಿಯಿರಿ</string>
+    <string name="dashboard">ಡ್ಯಾಶ್‌ಬೋರ್ಡ್</string>
+    <string name="add_post">ಹೊಸ ಪೋಸ್ಟ್‌</string>
 
 
 </resources>

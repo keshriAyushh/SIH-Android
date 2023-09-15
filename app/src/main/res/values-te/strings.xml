@@ -51,4 +51,6 @@
     <string name="govt_schemes">ప్రభుత్వ పథకాలు</string>
     <string name="ngo_schemes">ఎన్జీవో పథకాలు</string>
     <string name="learn">నేర్చుకో</string>
+    <string name="dashboard">డాష్బోర్డ్</string>
+    <string name="add_post">కొత్త పోస్ట్</string>
 </resources>

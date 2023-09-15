@@ -17,6 +17,19 @@
         android:theme="@style/Theme.GraminShikshaSahyog"
         tools:targetApi="31">
         <activity
+            android:name=".ui.activities.StudentSignUpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.activities.MentorActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".ui.activities.GovtSchemesForm"
             android:exported="false" />
         <activity
@@ -26,13 +39,9 @@
             android:name=".ui.activities.MentorSignUpActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activities.StudentSignUpActivity"
+            android:name=".ui.activities.SplashScreen"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".ui.activities.SignInActivity"

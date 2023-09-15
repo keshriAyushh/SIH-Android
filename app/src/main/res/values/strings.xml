@@ -13,6 +13,14 @@
         <item>Graduate</item>
         <item>Post-Graduate</item>
     </string-array>
+
+    <string-array name="mentorQualifications">
+        <item>Graduate</item>
+        <item>Post-Graduate</item>
+        <item>Doctorate</item>
+    </string-array>
+
+
     <string name="skills">Skills</string>
     <string name="progress">Progress</string>
     <string name="additional_info">Additional Info</string>

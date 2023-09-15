@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
+    android:background="@color/white"
     android:layout_height="match_parent"
     tools:context=".ui.activities.GovtSchemesForm">
 
@@ -186,6 +187,7 @@
                     android:src="@mipmap/logo"
                     android:textColor="@color/black"
                     android:textSize="15dp"
+                    app:cardBackgroundColor="@color/white"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.498"
@@ -202,6 +204,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="15dp"
+                            android:textColor="@color/black"
                             android:text="Eligibility"
                             android:textSize="20dp" />
 
@@ -214,6 +217,7 @@
                             android:layout_marginTop="10dp"
                             android:layout_marginBottom="25dp"
                             android:lineSpacingExtra="5dp"
+                            android:textColor="@color/black"
                             android:text="1. You should be a girl student.\n2. You should be pursuing a full-time degree/diploma program in any of the AICTE-approved institutions.\n3. You must have taken admission in the first year of your degree/diploma program during the current academic year."
                             android:textSize="13dp" />
 
@@ -236,7 +240,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.498"
-
+                    app:cardBackgroundColor="@color/white"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/materialCardView"
                     app:layout_constraintVertical_bias="0.205">
@@ -250,6 +254,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="15dp"
+                            android:textColor="@color/black"
                             android:text="Documents Required"
                             android:textSize="20dp" />
 
@@ -259,6 +264,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginHorizontal="20dp"
                             android:layout_marginTop="10dp"
+                            android:textColor="@color/black"
                             android:layout_marginBottom="25dp"
                             android:lineSpacingExtra="5dp"
                             android:text="1. You should be a girl student.\n2. You should be pursuing a full-time degree/diploma program in any of the AICTE-approved institutions.\n3. You must have taken admission in the first year of your degree/diploma program during the current academic year."
@@ -277,6 +283,8 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="20dp"
                     android:text="Apply"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/green"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.522"

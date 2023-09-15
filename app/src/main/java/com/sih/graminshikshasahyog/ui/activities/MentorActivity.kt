@@ -1,54 +1,48 @@
 package com.sih.graminshikshasahyog.ui.activities
 
-import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.sih.graminshikshasahyog.R
-import com.sih.graminshikshasahyog.databinding.ActivityMainBinding
+import com.sih.graminshikshasahyog.databinding.ActivityMentorBinding
 import com.sih.graminshikshasahyog.ui.fragments.AccountFragment
+import com.sih.graminshikshasahyog.ui.fragments.AddPostFragment
+import com.sih.graminshikshasahyog.ui.fragments.DashboardFragment
 import com.sih.graminshikshasahyog.ui.fragments.JobsFragment
+import com.sih.graminshikshasahyog.ui.fragments.MentorAccountFragment
 import com.sih.graminshikshasahyog.ui.fragments.MentorFragment
 import com.sih.graminshikshasahyog.ui.fragments.RuralAidFragment
 import com.sih.graminshikshasahyog.ui.fragments.SkillsFragment
 
-class MainActivity : AppCompatActivity() {
+class MentorActivity : AppCompatActivity() {
 
-    //Landing page for student sign up
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivityMentorBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityMentorBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        supportActionBar?.title = "Skills"
-        //Whenever the activity opens, set the skills fragment as default
-        setFragment(SkillsFragment(getString(R.string.learn), getString(R.string.progress)))
+
+        setFragment(DashboardFragment(getString(R.string.your_communities), getString(R.string.stats)))
 
         binding.bottomNav.setOnItemSelectedListener {
             //Replacing the fragments depending upon the item clicked
             when(it) {
-                R.id.skills -> {
-                    setFragment(SkillsFragment(getString(R.string.learn), getString(R.string.progress)))
+                R.id.dashboard -> {
+                    setFragment(DashboardFragment(getString(R.string.your_communities), getString(R.string.stats)))
                 }
-                R.id.jobs -> {
-                    setFragment(JobsFragment())
+                R.id.mentorAccount -> {
+                    setFragment(MentorAccountFragment())
                 }
-                R.id.mentor -> {
-                    setFragment(MentorFragment(getString(R.string.find_mentors), getString(R.string.your_mentors)))
-                }
-                R.id.ruralAid -> {
-                    setFragment(RuralAidFragment(getString(R.string.govt_schemes), getString(R.string.ngo_schemes)))
-                }
-                R.id.account -> {
-                    setFragment(AccountFragment())
+                R.id.addPost -> {
+                    setFragment(AddPostFragment())
                 }
                 else -> {
-                    setFragment(SkillsFragment(getString(R.string.learn), getString(R.string.progress)))
+                    setFragment(DashboardFragment(getString(R.string.your_communities), getString(R.string.stats)))
                 }
             }
             true
         }
     }
-
     private fun setFragment(fragment: Fragment) {
         //Ignore the mess, just changing the fragments
         val fragmentManager = supportFragmentManager

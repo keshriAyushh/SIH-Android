@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/white"
     tools:context=".ui.activities.NGO_form">
 
     <ScrollView
@@ -89,6 +90,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/white"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="5dp">
 
@@ -192,6 +194,7 @@
                 android:layout_marginHorizontal="10dp"
                 android:layout_marginBottom="10dp"
                 app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="@color/white"
                 app:cardElevation="5dp">
 
                 <androidx.appcompat.widget.LinearLayoutCompat
@@ -204,6 +207,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="15dp"
                         android:text="Requirements"
+                        android:textColor="@color/black"
                         android:textSize="17dp"
                         android:textStyle="bold" />
 
@@ -212,6 +216,7 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/requirements"
                         android:layout_marginLeft="25dp"
+                        android:textColor="@color/black"
                         android:layout_marginBottom="20dp"
                         android:text="1. Passed 10th class with at least 50% marks.\n2. Must be of age less than 21." />
 
@@ -226,6 +231,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="10dp"
                 android:id="@+id/applicationform"
+                app:cardBackgroundColor="@color/white"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="5dp">
 
@@ -240,6 +246,7 @@
                         android:layout_margin="15dp"
                         android:text="Application Form"
                         android:textSize="20dp"
+                        android:textColor="@color/black"
                         android:textStyle="bold" />
 
                     <TextView

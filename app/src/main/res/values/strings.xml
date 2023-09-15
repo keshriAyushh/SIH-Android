@@ -68,4 +68,11 @@
     <string name="govt_schemes">Govt. Schemes</string>
     <string name="ngo_schemes">NGO Schemes</string>
     <string name="learn">Learn</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="add_post">Add Post</string>
+    <string name="your_communities">Your Communities</string>
+    <string name="stats">Stats</string>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="create_community">Create a new community</string>
 </resources>

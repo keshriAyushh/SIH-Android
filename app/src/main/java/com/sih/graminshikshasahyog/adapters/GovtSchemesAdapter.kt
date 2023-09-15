@@ -14,7 +14,7 @@ class GovtSchemesAdapter(
 
     val schemeList: List<GovtSchemes>,
     val context: Context
-) : RecyclerView.Adapter<com.sih.graminshikshasahyog.adapters.GovtSchemesAdapter.SchemeViewHolder>() {
+) : RecyclerView.Adapter<GovtSchemesAdapter.SchemeViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SchemeViewHolder {
         val binding =
@@ -23,7 +23,7 @@ class GovtSchemesAdapter(
     }
 
     override fun onBindViewHolder(
-        holder: com.sih.graminshikshasahyog.adapters.GovtSchemesAdapter.SchemeViewHolder,
+        holder: GovtSchemesAdapter.SchemeViewHolder,
         position: Int
     ) {
         val schemeItem: GovtSchemes = schemeList[position]

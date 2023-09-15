@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".ui.activities.MainActivity">
+    tools:context=".ui.activities.MentorActivity">
 
     <FrameLayout
         android:id="@+id/flFragment"
@@ -23,10 +23,8 @@
         android:layout_alignParentBottom="true"
         android:background="@drawable/btm_shape"
         android:paddingTop="2dp"
-        app:cnb_menuResource="@menu/bottom_nav_menu"
+        app:cnb_menuResource="@menu/bottom_nav_menu_mentor"
         app:cnb_orientationMode="horizontal"
         app:cnb_unselectedColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

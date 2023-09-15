@@ -51,5 +51,7 @@
     <string name="govt_schemes">सरकारी. योजनाएं</string>
     <string name="ngo_schemes">एनजीओ योजनाएं</string>
     <string name="learn">सीखो</string>
+    <string name="dashboard">डैशबोर्ड</string>
+    <string name="add_post">नई पोस्ट</string>
 
 </resources>

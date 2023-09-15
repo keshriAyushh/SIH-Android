@@ -23,7 +23,7 @@
     <string name="forgot_password">पासवर्ड भूल गए?</string>
     <string name="mobilno_email">मोबाइल नंबर/ईमेल आईडी</string>
     <string name="new_here">यहाँ नये हैं? खाता बनाएँ</string>
-    <string name="name">नाम</string>
+    <string name="full_name">नाम</string>
     <string name="email">ईमेल</string>
     <string name="qualification">योग्यता</string>
     <string name="jobs">नौकरियां</string>
@@ -69,5 +69,11 @@
     <string name="create_mentor_account">गुरु बनें!</string>
     <string name="forgot_helper">अपना पासवर्ड रीसेट करने के लिए ईमेल प्राप्त करने के लिए नीचे अपना ईमेल दर्ज करें</string>
     <string name="send">" भेजें"</string>
+    <string name="sign_out">साइन आउट</string>
+    <string name="mentorship_programme">ग्रामीण शिक्षा सहयोग में मेंटरशिप कार्यक्रम आपको जमीनी स्तर पर ग्रामीण सामाजिक कार्यकर्ता बनने में सक्षम बनाता है। आप जरूरतमंद ग्रामीण युवाओं को उनकी शिक्षा, करियर विकल्पों और व्यवसायों पर परामर्श प्रदान कर सकते हैं। हमसे जुड़ें और एक वास्तविक हीरो बनें!</string>
+    <string name="mentorship">परामर्शदाता</string>
+    <string name="programme">प्रोग्राम</string>
+    <string name="choose_community">समुदाय चुनें</string>
+    <string name="english_tutorials">अंग्रेजी ट्यूटोरियल</string>
 
 </resources>

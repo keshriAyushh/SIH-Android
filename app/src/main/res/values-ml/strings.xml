@@ -23,7 +23,7 @@
     <string name="forgot_password">പാസ്വേഡ് മറന്നോ?</string>
     <string name="mobilno_email">മൊബൈൽ നമ്പർ / ഇമെയിൽ ഐഡി</string>
     <string name="new_here">ഇവിടെ പുതിയതാണോ?ഒരു അക്കൗണ്ട് സൃഷ്‌ടിക്കുക</string>
-    <string name="name">പേര്</string>
+    <string name="full_name">പേര്</string>
     <string name="email">ഇമെയിൽ</string>
     <string name="qualification">യോഗ്യത</string>
     <string name="jobs">ജോലികൾ</string>
@@ -69,4 +69,10 @@
     <string name="create_mentor_account">ഒരു ഉപദേശകനാകൂ!</string>
     <string name="forgot_helper">നിങ്ങളുടെ പാസ്‌വേഡ് പുനഃസജ്ജമാക്കുന്നതിന് ഒരു ഇമെയിൽ ലഭിക്കുന്നതിന് ചുവടെ നിങ്ങളുടെ ഇമെയിൽ നൽകുക</string>
     <string name="send">അയയ്ക്കുക</string>
+    <string name="sign_out">സൈൻ ഔട്ട്</string>
+    <string name="mentorship_programme">ഗ്രാമീണ ശിക്ഷാ സഹ്യോഗിലെ മെന്റർഷിപ്പ് പ്രോഗ്രാം താഴെത്തട്ടിൽ ഒരു ഗ്രാമീണ സാമൂഹിക പ്രവർത്തകനാകാൻ നിങ്ങളെ പ്രാപ്തരാക്കുന്നു. ദരിദ്രരായ ഗ്രാമീണ യുവാക്കൾക്ക് അവരുടെ വിദ്യാഭ്യാസം, തൊഴിൽ തിരഞ്ഞെടുപ്പുകൾ, ബിസിനസുകൾ എന്നിവയെക്കുറിച്ച് നിങ്ങൾക്ക് കൗസലിംഗ് നൽകാം. ഞങ്ങളോടൊപ്പം ചേരൂ, ഒരു യഥാർത്ഥ ഹീറോ ആകൂ!</string>
+    <string name="mentorship">മെന്റർഷീപ്പ്</string>
+    <string name="programme">പ്രോഗ്രാം</string>
+    <string name="choose_community">കമ്മ്യൂണിറ്റി തിരഞ്ഞെടുക്കുക</string>
+    <string name="english_tutorials">ഇംഗ്ലീഷ് ട്യൂട്ടോറിയലുകൾ</string>
 </resources>

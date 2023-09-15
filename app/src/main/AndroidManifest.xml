@@ -18,7 +18,7 @@
         tools:targetApi="31">
         <activity
             android:name=".ui.activities.CreateCommunity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".ui.activities.StudentSignUpActivity"
             android:exported="true" />
@@ -39,7 +39,7 @@
             android:exported="false" />
         <activity
             android:name=".ui.activities.MentorSignUpActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".ui.activities.SplashScreen"
             android:exported="true"></activity>

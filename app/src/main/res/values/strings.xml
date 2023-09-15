@@ -6,7 +6,7 @@
         <item>Female</item>
         <item>Others</item>
     </string-array>
- <string-array name="visibilty">
+    <string-array name="visibilty">
         <item>Public</item>
         <item>Private</item>
     </string-array>
@@ -93,4 +93,11 @@
     <string name="weekly">Last Week: </string>
     <string name="monthly">Last Month: </string>
     <string name="enrollments">Enrollments</string>
+    <string name="as_a_student">Student</string>
+    <string name="as_a_mentor">Mentor</string>
+    <string name="mobile_or_email">Mobile No./Email ID</string>
+    <string name="create_student_account">New here? Create a Student Account</string>
+    <string name="create_mentor_account">Become a Mentor!</string>
+    <string name="forgot_helper">Enter your email below to receive an email to reset your password</string>
+    <string name="send">Send</string>
 </resources>

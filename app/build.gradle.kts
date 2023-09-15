@@ -68,5 +68,7 @@ dependencies {
     implementation("com.github.ismaeldivita:chip-navigation-bar:1.4.0")
     implementation ("pl.droidsonroids.gif:android-gif-drawable:1.2.22")
 
+    implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
+
 
 }

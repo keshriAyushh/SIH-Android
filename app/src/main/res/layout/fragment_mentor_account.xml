@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.fragments.MentorAccountFragment">
 
     <FrameLayout
@@ -40,7 +40,7 @@
                         android:text="Your"
                         android:textColor="@color/white"
                         android:textSize="25dp"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -57,5 +57,354 @@
 
 
     </FrameLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mentorInnerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/mentorView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/container1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/innerCardLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/mentorProfilePicture"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/user"
+                    app:layout_constraintStart_toStartOf="@id/innerCardLayout"
+                    app:layout_constraintTop_toTopOf="@id/innerCardLayout" />
+
+                <TextView
+                    android:id="@+id/tvMentorName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Aditya Singh"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/mentorProfilePicture"
+                    app:layout_constraintStart_toStartOf="@id/mentorProfilePicture"
+                    app:layout_constraintTop_toBottomOf="@id/mentorProfilePicture" />
+
+                <TextView
+                    android:id="@+id/tvMentorText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/additional_info"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@id/tvMentorName"
+                    app:layout_constraintTop_toBottomOf="@id/tvMentorName" />
+
+                <View
+                    android:id="@+id/mentorBlock1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+
+                    android:background="@drawable/container3"
+                    app:layout_constraintEnd_toStartOf="@+id/mentorBlock2"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvMentorText1" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/mentorIcon1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="6dp"
+                    android:src="@drawable/exclamation"
+                    app:layout_constraintStart_toStartOf="@id/mentorBlock1"
+                    app:layout_constraintTop_toTopOf="@id/mentorBlock1" />
+
+                <TextView
+                    android:id="@+id/tvMentorText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:maxEms="4"
+                    android:text="@string/ques_living"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@id/mentorBlock1"
+                    app:layout_constraintTop_toBottomOf="@id/mentorIcon1" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/mentorIconBlock1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="6dp"
+                    android:src="@drawable/right_arrow"
+                    app:layout_constraintBottom_toBottomOf="@id/mentorBlock1"
+                    app:layout_constraintEnd_toEndOf="@id/mentorBlock1" />
+
+                <View
+                    android:id="@+id/mentorBlock2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/container3"
+                    app:layout_constraintBottom_toBottomOf="@id/mentorBlock1"
+                    app:layout_constraintEnd_toStartOf="@+id/mentorBlock3"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/mentorBlock1"
+                    app:layout_constraintTop_toTopOf="@id/mentorBlock1"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/mentorIcon2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="6dp"
+                    android:src="@drawable/exclamation"
+                    app:layout_constraintStart_toStartOf="@id/mentorBlock2"
+                    app:layout_constraintTop_toTopOf="@id/mentorBlock2" />
+
+                <TextView
+                    android:id="@+id/tvMentorText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:maxEms="4"
+                    android:text="@string/ques_location"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@id/mentorBlock2"
+                    app:layout_constraintTop_toBottomOf="@id/mentorIcon2" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/mentorIconBlock2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="6dp"
+                    android:src="@drawable/right_arrow"
+                    app:layout_constraintBottom_toBottomOf="@id/mentorBlock2"
+                    app:layout_constraintEnd_toEndOf="@id/mentorBlock2" />
+
+                <View
+                    android:id="@+id/mentorBlock3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/container3"
+                    app:layout_constraintBottom_toBottomOf="@id/mentorBlock2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/mentorBlock2"
+                    app:layout_constraintTop_toTopOf="@id/mentorBlock2"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/mentorIcon3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="6dp"
+                    android:src="@drawable/exclamation"
+                    app:layout_constraintStart_toStartOf="@id/mentorBlock3"
+                    app:layout_constraintTop_toTopOf="@id/mentorBlock3" />
+
+
+                <TextView
+                    android:id="@+id/tvMentorText4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:maxEms="4"
+                    android:text="@string/ques_email"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@id/mentorBlock3"
+                    app:layout_constraintTop_toBottomOf="@id/mentorIcon3" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/mentorIconBlock3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="6dp"
+                    android:src="@drawable/right_arrow"
+                    app:layout_constraintBottom_toBottomOf="@id/mentorBlock3"
+                    app:layout_constraintEnd_toEndOf="@id/mentorBlock3" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="15dp"
+            app:layout_constraintBottom_toTopOf="@id/guideline6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mentorView1">
+
+
+            <View
+                android:id="@+id/mentorView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/container1"
+                android:backgroundTint="@color/gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvMentorText5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/private_info"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/mentorView2"
+                app:layout_constraintTop_toTopOf="@id/mentorView2" />
+
+            <TextView
+                android:id="@+id/tvMentorGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/gender_colon"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/tvMentorText5"
+                app:layout_constraintTop_toBottomOf="@id/tvMentorText5" />
+
+            <TextView
+                android:id="@+id/tvMentorGenderValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:text="@string/male"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/tvMentorGender"
+                app:layout_constraintEnd_toEndOf="@id/mentorView2"
+                app:layout_constraintTop_toTopOf="@id/tvMentorGender" />
+
+            <TextView
+                android:id="@+id/tvMentorPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/phone_colon"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/tvMentorText5"
+                app:layout_constraintTop_toBottomOf="@id/tvMentorGender" />
+
+            <TextView
+                android:id="@+id/tvMentorPhoneValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:text="8772838112"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/tvMentorPhone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tvMentorPhone" />
+
+            <TextView
+                android:id="@+id/tvMentorDOBValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:text="03/12/2002"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/tvMentorDOB"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tvMentorDOB" />
+
+            <TextView
+                android:id="@+id/tvMentorDOB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/dob_colon"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/tvMentorText5"
+                app:layout_constraintTop_toBottomOf="@id/tvMentorPhone" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="562dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="466dp" />
+
+        <Button
+            android:id="@+id/btnMentorSignOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign out"
+            android:layout_marginTop="50dp"
+            app:layout_constraintTop_toBottomOf="@id/guideline6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

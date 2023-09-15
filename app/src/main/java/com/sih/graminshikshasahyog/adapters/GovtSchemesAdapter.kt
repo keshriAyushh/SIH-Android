@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.sih.graminshikshasahyog.databinding.GovtSchemeItemBinding
 import com.sih.graminshikshasahyog.model.GovtSchemes
+import com.sih.graminshikshasahyog.ui.activities.GovtSchemesForm
 import com.sih.graminshikshasahyog.ui.activities.NGO_form
 
 class GovtSchemesAdapter(
@@ -28,7 +29,7 @@ class GovtSchemesAdapter(
         val schemeItem: GovtSchemes = schemeList[position]
         holder.bind(schemeItem)
         holder.applybtn.setOnClickListener{
-            val intent = Intent(context,NGO_form::class.java)
+            val intent = Intent(context,GovtSchemesForm::class.java)
             intent.putExtra("type","GovtScheme")
             intent.putExtra("code",holder.code)
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)

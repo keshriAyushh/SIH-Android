@@ -1,16 +1,12 @@
 package com.sih.graminshikshasahyog.adapters
 
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.sih.graminshikshasahyog.R
 import com.sih.graminshikshasahyog.databinding.CommunityItemBinding
-import com.sih.graminshikshasahyog.databinding.GovtSchemeItemBinding
 import com.sih.graminshikshasahyog.model.CommunityModel
-import com.sih.graminshikshasahyog.model.GovtSchemes
-import com.sih.graminshikshasahyog.ui.activities.GovtSchemesForm
 
 class CommunityAdapter(
     private val communities: List<CommunityModel>
@@ -19,7 +15,7 @@ class CommunityAdapter(
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CommunityViewHolder {
         val binding =
             CommunityItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        return CommunityAdapter.CommunityViewHolder(binding)
+        return CommunityViewHolder(binding)
     }
 
     override fun onBindViewHolder(holder: CommunityViewHolder, position: Int) {
@@ -27,7 +23,7 @@ class CommunityAdapter(
         holder.bind(community)
     }
 
-    override fun getItemCount() = 2
+    override fun getItemCount() = communities.size
 
     class CommunityViewHolder(private val binding: CommunityItemBinding): RecyclerView.ViewHolder(binding.root) {
         fun bind(communityItem: CommunityModel) {

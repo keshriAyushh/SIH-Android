@@ -1,11 +1,13 @@
 package com.sih.graminshikshasahyog.ui.fragments
 
+import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.github.mikephil.charting.charts.LineChart
+import com.github.mikephil.charting.components.Description
 import com.github.mikephil.charting.data.Entry
 import com.github.mikephil.charting.data.LineData
 import com.github.mikephil.charting.data.LineDataSet
@@ -32,6 +34,17 @@ class MentorStatsFragment : Fragment() {
         val data: LineData = LineData(lineDataSet1)
         lineChart.data = data
         lineChart.invalidate()
+        lineChart.setDrawGridBackground(true)
+
+        val description: Description = Description()
+        description.apply {
+            text = getString(R.string.enrollments)
+            textColor = Color.GREEN
+        }
+
+        lineChart.description = description
+        lineChart.setDrawBorders(true)
+        lineChart.setBorderColor(Color.BLACK)
 
 
         return binding.root

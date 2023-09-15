@@ -1,5 +1,6 @@
 package com.sih.graminshikshasahyog.ui.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -10,6 +11,7 @@ import com.sih.graminshikshasahyog.R
 import com.sih.graminshikshasahyog.adapters.CommunityAdapter
 import com.sih.graminshikshasahyog.databinding.FragmentMentorCommunitiesBinding
 import com.sih.graminshikshasahyog.model.CommunityModel
+import com.sih.graminshikshasahyog.ui.activities.CreateCommunity
 
 class MentorCommunitiesFragment : Fragment() {
 
@@ -76,6 +78,10 @@ class MentorCommunitiesFragment : Fragment() {
 
         binding.rvCommunity.adapter = communityAdapter
         binding.rvCommunity.layoutManager = LinearLayoutManager(requireContext())
+
+        binding.iconAdd.setOnClickListener{
+            startActivity(Intent(requireContext(),CreateCommunity::class.java))
+        }
 
         return binding.root
     }

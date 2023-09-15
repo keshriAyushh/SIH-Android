@@ -12,13 +12,14 @@ import com.sih.graminshikshasahyog.adapters.ViewPagerAdapter1
 import com.sih.graminshikshasahyog.adapters.ViewPagerAdapter4
 import com.sih.graminshikshasahyog.databinding.FragmentDashboardBinding
 
-class DashboardFragment(
+public class DashboardFragment(
     private val text1: String,
     private val text2: String
 ) : Fragment() {
 
-    private lateinit var binding: FragmentDashboardBinding
-    override fun onCreateView(
+
+    public lateinit var binding: FragmentDashboardBinding
+    public override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
@@ -57,11 +58,11 @@ class DashboardFragment(
         return binding.root
     }
 
-    private fun createTabs(tabLayout: TabLayout, text: String) {
+    public fun createTabs(tabLayout: TabLayout, text: String) {
         tabLayout.addTab(tabLayout.newTab().setText(text))
     }
 
-    override fun onDestroyView() {
+   public override fun onDestroyView() {
         super.onDestroyView()
     }
 }

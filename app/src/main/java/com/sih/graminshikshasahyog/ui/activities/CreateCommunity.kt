@@ -13,29 +13,27 @@ import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.ktx.Firebase
 import com.sih.graminshikshasahyog.R
+import com.sih.graminshikshasahyog.databinding.ActivityCreateCommunityBinding
+import com.sih.graminshikshasahyog.databinding.ActivityMentorSignUpBinding
 
 class CreateCommunity : AppCompatActivity() {
 
-
+    private lateinit var binding: ActivityCreateCommunityBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_create_community)
 
-        val communityname = findViewById<EditText>(R.id.etCommunityName)
-        val visibilitytext = findViewById<TextView>(R.id.etVisibility)
-        val token = findViewById<EditText>(R.id.etToken)
-        val bio = findViewById<EditText>(R.id.etBio)
-        val shortdesc = findViewById<EditText>(R.id.etShortDescription)
-        val createbtn = findViewById<Button>(R.id.createcommbtn)
+        binding = ActivityCreateCommunityBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        createbtn.setOnClickListener{
-            storeCommunityDetails(communityname.text.toString(),visibilitytext.text.toString(),bio.text.toString(),shortdesc.text.toString(),token.text.toString())
 
+        binding.createcommbtn.setOnClickListener{
+            storeCommunityDetails()
+            Toast.makeText(this, "Button Click",Toast.LENGTH_SHORT).show()
         }
 
     }
 
-    private fun storeCommunityDetails(communityname: String, visibilitytext: String, bio: String, shortdesc: String, token: String) {
+    private fun storeCommunityDetails() {
 
         val firestoredb = FirebaseFirestore.getInstance()
         val collectionReference = firestoredb.collection("comunitydetailsDB")
@@ -61,14 +59,14 @@ class CreateCommunity : AppCompatActivity() {
 
 
         val data = hashMapOf(
-            "communityname" to communityname,
-            "visibility" to visibilitytext,
-            "creator" to userName,
-            "bio" to bio,
-            "shortdescriptio" to shortdesc,
+            "communityname" to binding.etCommunityName.text,
+            "visibility" to binding.etVisibility.text,
+            "creator" to user,
+            "bio" to binding.etBio.text,
+            "shortdescription" to binding.etShortDescription.text,
             "links" to arrayListOf("")
         )
-        collectionReference.document(token).set(data)
+        collectionReference.document(binding.etToken.text.toString()).set(data)
             .addOnSuccessListener {
                 Toast.makeText(this, "Added communitydetailsDB",Toast.LENGTH_SHORT).show()
             }
@@ -79,7 +77,7 @@ class CreateCommunity : AppCompatActivity() {
             "nullplace" to "null"
         )
 
-        mentorDocument.collection(communityname).add(data)
+        mentorDocument.collection(binding.etCommunityName.text.toString()).add(data)
             .addOnSuccessListener {
                 Toast.makeText(this, "Added in mentorDB",Toast.LENGTH_SHORT).show()
             }

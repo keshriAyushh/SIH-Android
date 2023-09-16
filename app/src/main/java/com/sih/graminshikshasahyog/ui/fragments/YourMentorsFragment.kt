@@ -27,15 +27,15 @@ class YourMentorsFragment : Fragment() {
         binding = FragmentYourMentorsBinding.inflate(layoutInflater)
 
 
-        adapter = MentorAdapter(
-            listOf(
-                MentorItemModel(
-                    title = "Shivam Aryan",
-                    description = "Lull",
-                    mentorId = "204030"
-                )
-            )
-        )
+//        adapter = MentorAdapter(
+//            listOf(
+//                MentorItemModel(
+//                    title = "Shivam Aryan",
+//                    description = "Lull",
+//                    mentorId = "204030"
+//                )
+//            )
+//        )
 
         binding.rvMentors.apply {
             adapter = adapter

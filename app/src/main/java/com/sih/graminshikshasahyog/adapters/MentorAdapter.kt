@@ -32,8 +32,9 @@ class MentorAdapter(
 
         val btnEnroll = binding.btnEnroll
         fun bind(mentor: MentorItemModel) {
-            binding.tvTitle.text = mentor.title
+            binding.tvCommunityName.text = mentor.title
             binding.tvDescription.text = mentor.description
+            binding.tvAuthor.text = mentor.mentorName
 
             Glide.with(binding.ivImage)
                 .load(mentor.pfp)

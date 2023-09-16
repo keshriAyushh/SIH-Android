@@ -10,8 +10,10 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.sih.graminshikshasahyog.R
+import com.sih.graminshikshasahyog.adapters.CourseAdapter
 import com.sih.graminshikshasahyog.adapters.MentorAdapter
 import com.sih.graminshikshasahyog.databinding.FragmentFindMentorsBinding
+import com.sih.graminshikshasahyog.model.CourseModel
 import com.sih.graminshikshasahyog.model.MentorItemModel
 import kotlinx.coroutines.tasks.await
 
@@ -25,9 +27,33 @@ class FindMentorsFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-
+        var list : MutableList<MentorItemModel>  = mutableListOf()
         binding = FragmentFindMentorsBinding.inflate(layoutInflater)
         firestore = FirebaseFirestore.getInstance()
+        val collectionref = firestore.collection("comunitydetailsDB")
+        collectionref.get()
+            .addOnCompleteListener {task ->
+               if(task.isSuccessful){
+                   for (document in task.result!!){
+                       val documentId = document.id
+
+                       val data = document.data
+
+                       val mentorModel: MentorItemModel = MentorItemModel(
+                           data.get("communityname").toString(),
+                           data.get("shortdesc").toString(),
+                            "",
+                           data.get("creator").toString(),
+
+
+                       )
+                       list.add(mentorModel)
+                   }
+                   adapter = MentorAdapter(list)
+                   binding.rvMentors.adapter = adapter
+
+               }
+            }
 
         mentors = mutableListOf()
 

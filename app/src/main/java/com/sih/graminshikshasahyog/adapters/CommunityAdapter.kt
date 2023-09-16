@@ -40,7 +40,7 @@ class CommunityAdapter(
 
         val btnView = binding.btnView
         fun bind(communityItem: CommunityModel) {
-            binding.tvTitle.text = communityItem.title
+            binding.tvCommunityName.text = communityItem.title
             binding.tvSize.text = communityItem.size
             binding.tvVisibility.text = communityItem.visibility
 

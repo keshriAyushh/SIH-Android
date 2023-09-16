@@ -4,5 +4,5 @@ data class MentorItemModel(
     val title: String,
     val description: String,
     val pfp: String = "",
-    val mentorId: String
+    val mentorName: String
 )

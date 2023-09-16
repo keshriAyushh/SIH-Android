@@ -5,5 +5,5 @@ data class CommunityModel(
     val size: String,
     val visibility: String,
     val logo: String = "",
-    val communityId: String
+    val communityId: String,
 )

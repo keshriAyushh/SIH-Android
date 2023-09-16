@@ -69,12 +69,14 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mentorprogramme">
 
 
                     <TextView
                         android:id="@+id/textView5"
                         android:layout_width="wrap_content"
+                        android:visibility="invisible"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="15dp"
                         android:layout_marginTop="20dp"
@@ -85,6 +87,7 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
+                        android:visibility="invisible"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
@@ -96,6 +99,7 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
+                        android:visibility="invisible"
                         android:id="@+id/textView7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -109,6 +113,7 @@
                         android:layout_width="239dp"
                         android:layout_height="149dp"
                         android:layout_marginTop="25dp"
+                        android:visibility="invisible"
                         android:text="The Mentorship Programme in Gramin Shiksha Sahyog enables you to become a rural social worker at grassroot level.  You can provide couselling to the needy rural youth on their education, career choices and businesses.
 
                                             Join us and become a real HERO!"

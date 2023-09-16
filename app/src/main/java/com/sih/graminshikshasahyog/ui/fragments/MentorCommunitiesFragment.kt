@@ -7,7 +7,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.sih.graminshikshasahyog.R
 import com.sih.graminshikshasahyog.adapters.CommunityAdapter
 import com.sih.graminshikshasahyog.databinding.FragmentMentorCommunitiesBinding
 import com.sih.graminshikshasahyog.model.CommunityModel
@@ -72,18 +71,21 @@ class MentorCommunitiesFragment : Fragment() {
                     size = "242 members enrolled",
                     visibility = "Public",
                     communityId = "2x4387cdgp2"
-                )
-            )
+                ),
+            ),
+            requireContext()
+
         )
 
         binding.rvCommunity.adapter = communityAdapter
         binding.rvCommunity.layoutManager = LinearLayoutManager(requireContext())
 
-        binding.iconAdd.setOnClickListener{
-            startActivity(Intent(requireContext(),CreateCommunity::class.java))
+        binding.iconAdd.setOnClickListener {
+            startActivity(Intent(requireContext(), CreateCommunity::class.java))
         }
 
         return binding.root
     }
+
 
 }

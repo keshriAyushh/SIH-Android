@@ -23,7 +23,7 @@
     <string name="forgot_password">పాస్వర్డ్ మర్చిపోయారా?</string>
     <string name="mobilno_email">మొబైల్ నంబర్/ఇమెయిల్ ఐడి</string>
     <string name="new_here">ఇక్కడ కొత్తవా? ఖాతాను సృష్టించండి</string>
-    <string name="name">పేరు</string>
+    <string name="full_name">పేరు</string>
     <string name="email">ఇమెయిల్</string>
     <string name="qualification">అర్హత</string>
     <string name="jobs">ఉద్యోగాలు</string>
@@ -69,4 +69,10 @@
     <string name="create_mentor_account">మెంటార్ అవ్వండి!</string>
     <string name="forgot_helper">మీ పాస్‌వర్డ్‌ని రీసెట్ చేయడానికి ఇమెయిల్‌ను స్వీకరించడానికి దిగువన మీ ఇమెయిల్‌ని నమోదు చేయండి</string>
     <string name="send">పంపండి</string>
+    <string name="sign_out">సైన్ అవుట్ చేయండి</string>
+    <string name="mentorship_programme">గ్రామీణ శిక్షా సహయోగ్‌లోని మెంటర్‌షిప్ ప్రోగ్రామ్ అట్టడుగు స్థాయిలో గ్రామీణ సామాజిక కార్యకర్తగా మారడానికి మిమ్మల్ని అనుమతిస్తుంది. మీరు నిరుపేద గ్రామీణ యువతకు వారి విద్య, వృత్తి ఎంపికలు మరియు వ్యాపారాలపై కౌసెలింగ్ అందించవచ్చు. మాతో చేరండి మరియు నిజమైన హీరో అవ్వండి!</string>
+    <string name="mentorship">మెంటర్‌షీప్</string>
+    <string name="programme">ప్రోగ్రామ్</string>
+    <string name="choose_community">సంఘాన్ని ఎంచుకోండి</string>
+    <string name="english_tutorials">ఇంగ్లీష్ ట్యుటోరియల్స్</string>
 </resources>

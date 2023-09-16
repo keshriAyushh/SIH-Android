@@ -23,7 +23,7 @@
     <string name="forgot_password">ಪಾಸ್ವರ್ಡ್ ಮರೆತಿರಾ?</string>
     <string name="mobilno_email">ಮೊಬೈಲ್ ಸಂಖ್ಯೆ/ಇಮೇಲ್ ಐಡಿ</string>
     <string name="new_here">ಇಲ್ಲಿ ಹೊಸದಾ? ಖಾತೆಯನ್ನು ರಚಿಸಿ</string>
-    <string name="name">ಹೆಸರು</string>
+    <string name="full_name">ಹೆಸರು</string>
     <string name="email">ಇಮೇಲ್</string>
     <string name="qualification">ಅರ್ಹತೆ</string>
     <string name="jobs">ಉದ್ಯೋಗಗಳು</string>
@@ -69,6 +69,12 @@
     <string name="create_mentor_account">ಮಾರ್ಗದರ್ಶಕರಾಗಿ!</string>
     <string name="forgot_helper">ನಿಮ್ಮ ಪಾಸ್‌ವರ್ಡ್ ಅನ್ನು ಮರುಹೊಂದಿಸಲು ಇಮೇಲ್ ಸ್ವೀಕರಿಸಲು ನಿಮ್ಮ ಇಮೇಲ್ ಅನ್ನು ಕೆಳಗೆ ನಮೂದಿಸಿ</string>
     <string name="send">ಕಳುಹಿಸು</string>
+    <string name="sign_out">ಸೈನ್ ಔಟ್ ಮಾಡಿ</string>
+    <string name="mentorship_programme">ಗ್ರಾಮೀಣ ಶಿಕ್ಷಾ ಸಹಕಾರ್‌ನಲ್ಲಿನ ಮಾರ್ಗದರ್ಶನ ಕಾರ್ಯಕ್ರಮವು ತಳಮಟ್ಟದಲ್ಲಿ ಗ್ರಾಮೀಣ ಸಮಾಜ ಸೇವಕರಾಗಲು ನಿಮಗೆ ಅನುವು ಮಾಡಿಕೊಡುತ್ತದೆ. ಅಗತ್ಯವಿರುವ ಗ್ರಾಮೀಣ ಯುವಕರಿಗೆ ಅವರ ಶಿಕ್ಷಣ, ವೃತ್ತಿ ಆಯ್ಕೆಗಳು ಮತ್ತು ವ್ಯವಹಾರಗಳ ಕುರಿತು ನೀವು ಸಲಹೆ ನೀಡಬಹುದು. ನಮ್ಮೊಂದಿಗೆ ಸೇರಿ ಮತ್ತು ನಿಜವಾದ ಹೀರೋ ಆಗಿ!</string>
+    <string name="mentorship">ಮೆಂಟರ್‌ಶೀಪ್</string>
+    <string name="programme">ಪ್ರೋಗ್ರಾಂ</string>
+    <string name="choose_community">ಸಮುದಾಯವನ್ನು ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="english_tutorials">ಇಂಗ್ಲೀಷ್ ಟ್ಯುಟೋರಿಯಲ್ಸ್</string>
 
 
 </resources>

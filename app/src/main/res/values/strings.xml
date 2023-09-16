@@ -24,6 +24,11 @@
         <item>Doctorate</item>
     </string-array>
 
+    <string-array name="english_tutorials">
+    <item>English Tutorials</item>
+    </string-array>
+
+
 
     <string name="skills">Skills</string>
     <string name="progress">Progress</string>
@@ -99,4 +104,17 @@
     <string name="create_mentor_account">Become a Mentor!</string>
     <string name="forgot_helper">Enter your email below to receive an email to reset your password</string>
     <string name="send">Send</string>
+    <string name="sign_out">Sign out</string>
+    <string name="mentorship_programme">The Mentorship Programme in Gramin Shiksha Sahyog enables you to become a rural social worker at grassroot level.  You can provide couselling to the needy rural youth on their education, career choices and businesses.Join us and become a real HERO!</string>
+    <string name="mentorship">Mentorship</string>
+    <string name="programme">Programme</string>
+    <string name="choose_community">Choose community</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mentor_posts">Mentor Posts</string>
+    <string name="community">Community</string>
+    <string name="thanks">Thank you</string>
+    <string name="reply">Reply</string>
+    <string name="delete">Delete</string>
 </resources>

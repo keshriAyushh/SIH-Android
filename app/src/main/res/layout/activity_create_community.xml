@@ -188,7 +188,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/etShortDescriptionLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="200dp"
         android:layout_marginTop="20dp"
         android:hint="Short Description"
         app:boxCornerRadiusBottomEnd="10dp"
@@ -208,6 +208,7 @@
             android:id="@+id/etShortDescription"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:gravity="top"
             android:inputType="textMultiLine"
             android:textColor="@color/black"
             android:textSize="14sp" />

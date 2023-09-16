@@ -5,10 +5,12 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.google.firebase.storage.FirebaseStorage
 import com.sih.graminshikshasahyog.databinding.GovtSchemeItemBinding
 import com.sih.graminshikshasahyog.model.GovtSchemes
 import com.sih.graminshikshasahyog.model.NGOSchemes
 import com.sih.graminshikshasahyog.ui.activities.NGO_form
+import com.squareup.picasso.Picasso
 
 class NGOSchemeAdapter(
 
@@ -36,6 +38,21 @@ class NGOSchemeAdapter(
             context.startActivity(intent)
         }
 
+        val storageRef = FirebaseStorage.getInstance().reference
+
+        val imageRef = storageRef.child("ngo_img/00"+(position+1).toString()+".jpeg")
+
+        imageRef.downloadUrl
+            .addOnSuccessListener { uri ->
+                // Use Picasso to load and display the image
+
+                Picasso.get().load(uri).into(holder.imageview)
+            }
+            .addOnFailureListener { exception ->
+                // Handle any errors that may occur
+                println("Error downloading image: $exception")
+            }
+
     }
 
     override fun getItemCount() = schemeList.size
@@ -44,6 +61,7 @@ class NGOSchemeAdapter(
         RecyclerView.ViewHolder(binding.root) {
         val applybtn = binding.btnApplyNow
         var code:String = ""
+        val imageview = binding.ivScheme1
         fun bind(schemeItem: NGOSchemes) {
             binding.tvSchemeTitle.text = schemeItem.scheme
             binding.tvEligibility.text = schemeItem.desc

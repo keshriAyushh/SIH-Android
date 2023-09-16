@@ -43,10 +43,10 @@
             android:name=".ui.activities.MentorSignUpActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activities.SplashScreen"
+            android:name=".ui.activities.SignInActivity"
             android:exported="true" />
         <activity
-            android:name=".ui.activities.SignInActivity"
+            android:name=".ui.activities.SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

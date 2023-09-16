@@ -19,13 +19,9 @@ class JobsAdapter(
     override fun onBindViewHolder(holder: JobsViewHolder, position: Int) {
         val jobItem: JobModel = jobs[position]
         holder.bind(jobItem)
-//        holder.applybtn.setOnClickListener{
-//            val intent = Intent(context, GovtSchemesForm::class.java)
-//            intent.putExtra("type","GovtScheme")
-//            intent.putExtra("code",holder.code)
-//            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-//            context.startActivity(intent)
-//        }
+
+
+
     }
 
     override fun getItemCount() = jobs.size
@@ -37,7 +33,6 @@ class JobsAdapter(
             binding.companytv.text = jobItem.company
             binding.jobdescTV.text = jobItem.description
             binding.salaryTV.text = jobItem.salary
-            binding.tvLocation.text = jobItem.location
             binding.jobtitletv.text = jobItem.title
         }
     }

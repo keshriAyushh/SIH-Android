@@ -7,10 +7,12 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import com.google.android.gms.tasks.OnSuccessListener
 import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.firestore.FieldValue
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.ktx.Firebase
 import com.sih.graminshikshasahyog.R
@@ -68,7 +70,7 @@ class CreateCommunity : AppCompatActivity() {
                     "nullplace" to "null"
                 )
 
-                val userId = user?.uid.toString()
+                val userId = user.uid.toString()
                 val mentorCollection = firestoredb.collection("mentoruserDB")
                 val mentorDocument = mentorCollection.document(userId)
                 mentorDocument.collection(binding.etCommunityName.text.toString()).add(data)
@@ -79,6 +81,12 @@ class CreateCommunity : AppCompatActivity() {
                     .addOnFailureListener{
                         Toast.makeText(this, "Failed to add mentorDB",Toast.LENGTH_SHORT).show()
                     }
+                val newString = binding.etCommunityName.text.toString()
+
+                mentorDocument.update("communities", FieldValue.arrayUnion(newString))
+                    .addOnSuccessListener(OnSuccessListener<Void> {
+
+                    })
 
             }
         } else {

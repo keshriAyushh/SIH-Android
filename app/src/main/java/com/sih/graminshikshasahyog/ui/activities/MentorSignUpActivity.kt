@@ -86,7 +86,8 @@ class MentorSignUpActivity : AppCompatActivity() {
             "email" to binding.etEmail.text.toString(),
             "gender" to binding.etGender.text.toString(),
             "name" to binding.etName.text.toString(),
-            "qualification" to binding.etMentorQualification.text.toString()
+            "qualification" to binding.etMentorQualification.text.toString(),
+            "communities" to listOf("")
         )
         collectionref.document(userid).set(data)
             .addOnSuccessListener {

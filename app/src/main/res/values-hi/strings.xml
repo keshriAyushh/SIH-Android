@@ -23,7 +23,13 @@
     <string name="forgot_password">पासवर्ड भूल गए?</string>
     <string name="mobilno_email">मोबाइल नंबर/ईमेल आईडी</string>
     <string name="new_here">यहाँ नये हैं? खाता बनाएँ</string>
-    <string name="full_name">नाम</string>
+    <string name="mentor_posts">उपदेशक पोस्ट</string>
+    <string name="community">समुदाय</string>
+    <string name="thanks">धन्यवाद</string>
+    <string name="reply">जवाब दें</string>
+    <string name="delete">हटाएँ</string>
+    <string name="enroll">नामांकन करें</string>
+    <string name="full_name">नामपूरा नाम</string>
     <string name="email">ईमेल</string>
     <string name="qualification">योग्यता</string>
     <string name="jobs">नौकरियां</string>

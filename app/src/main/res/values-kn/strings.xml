@@ -23,6 +23,12 @@
     <string name="forgot_password">ಪಾಸ್ವರ್ಡ್ ಮರೆತಿರಾ?</string>
     <string name="mobilno_email">ಮೊಬೈಲ್ ಸಂಖ್ಯೆ/ಇಮೇಲ್ ಐಡಿ</string>
     <string name="new_here">ಇಲ್ಲಿ ಹೊಸದಾ? ಖಾತೆಯನ್ನು ರಚಿಸಿ</string>
+    <string name="mentor_posts">ಮಾರ್ಗದರ್ಶಕರ ಪೋಸ್ಟ್‌ಗಳು</string>
+    <string name="community">ಸಮುದಾಯ</string>
+    <string name="thanks">ಧನ್ಯವಾದ</string>
+    <string name="reply">ಉತ್ತರಿಸು</string>
+    <string name="delete">ಅಳಿಸಿ</string>
+    <string name="enroll">ದಾಖಲು</string>
     <string name="full_name">ಹೆಸರು</string>
     <string name="email">ಇಮೇಲ್</string>
     <string name="qualification">ಅರ್ಹತೆ</string>
